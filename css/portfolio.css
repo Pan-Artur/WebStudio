@@ -184,6 +184,10 @@ body {
     gap: 30px;
 }
 
+.projects-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .projects-title {
     font-weight: 700;
     font-size: 18px;
