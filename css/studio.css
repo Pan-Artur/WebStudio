@@ -114,12 +114,12 @@ body {
 .topic {  
     height: 600px;
     top: 80px;
-    background-image: url(./img/header-background.png.png);
     margin-right: auto;
     margin-left: auto;
     padding-top: 200px;
     display: flex;
     flex-direction: row;
+    background-image: url(../img/header-background.png);
 }
 
 .topic-title {
@@ -180,22 +180,22 @@ body {
 }
 
 .about-us-item:nth-child(1)::before {
-    background-image: url(./img/antenna\ 1.png);
+    background-image: url(../img/antenna.png);
     background-size: 70px;
 }
 
 .about-us-item:nth-child(2)::before {
-    background-image: url(./img/clock\ 1.png);
+    background-image: url(../img/clock.png);
     background-size: 70px;
 }
 
 .about-us-item:nth-child(3)::before {
-    background-image: url(./img/diagram\ 1.png);
+    background-image: url(../img/diagram.png);
     background-size: 70px;
 }
 
 .about-us-item:nth-child(4)::before {
-    background-image: url(./img/astronaut\ 1.png);
+    background-image: url(../img/astronaut.png);
     background-size: 70px;
 }
 
