@@ -119,7 +119,7 @@ body {
     padding-top: 200px;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/header-background.png);
+    background-image: radial-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/topicImg.jpg);
 }
 
 .topic-title {
