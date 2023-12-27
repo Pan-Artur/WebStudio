@@ -1,0 +1,346 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.933);
+    width: 100%;
+    z-index: 4;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-list1 {
+    display: flex;
+    gap: 50px;
+    width: 286px;
+}
+
+.header-list2 {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+
+.header-logo {   
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #2196F3;
+    margin-right: 93px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover {   
+    color: #000000;
+}
+
+.header-logo:focus {   
+    color: #000000;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover {
+    color: #2196F3;
+}
+
+.logo:focus {
+    color: #2196F3;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover .logo {
+    color: #2196F3;
+}
+
+.header-logo:focus .logo {
+    color: #2196F3;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #212121;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #212121;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.header-link:hover {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+}
+
+.header-link:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+    width: 60px;
+}
+
+.bottom-line::after {
+    display: block;
+    content: '';
+    width: 48px;
+    height: 4px; 
+    border-radius: 2px;
+    background-color: #2196F3;
+    position: relative;
+    top: 28px;
+    right: 2px;
+
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-line1::after {
+    opacity: 1;
+    width: 0px;
+
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-line1:hover::after {
+    opacity: 1;
+    width: 44px;
+}
+
+.bottom-line1:focus::after {
+    opacity: 1;
+    width: 44px;
+
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-line2::after {
+    background-color: #2196F3;
+    width: 70px;
+}
+
+.bottom-line3::after {
+    opacity: 1;
+    width: 0px;
+
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-line3:hover::after {
+    opacity: 1;
+    width: 67px;
+}
+
+.bottom-line3:focus::after {
+    opacity: 1;
+    width: 67px;
+
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kontakt-link {
+    color: #212121;
+}
+
+.header-post-icon {
+    width: 16px;
+    height: 12px; 
+    fill: #757575;
+    margin-right: 8px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-post-icon:hover {
+    width: 16px;
+    height: 12px; 
+    fill: #2196F3;
+}
+
+.header-phone-icon:focus {
+    width: 16px;
+    height: 12px; 
+    fill: #2196F3;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-post {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #757575;
+    text-align: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-post:hover {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+}
+
+.header-post:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.header-phone-icon {
+    width: 10px;
+    height: 16px; 
+    fill: #757575;
+    margin-right: 8px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-phone-icon:hover {
+    width: 10px;
+    height: 16px; 
+    fill: #2196F3;
+}
+
+.header-phone-icon:focus {
+    width: 10px;
+    height: 16px; 
+    fill: #2196F3;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-telephone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-telephone:hover {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+}
+
+.header-telephone:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #2196F3;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-post:hover .header-post-icon {
+    fill: #2196F3;
+}
+
+.header-post:focus .header-post-icon {
+    fill: #2196F3;
+}
+
+.header-telephone:hover .header-phone-icon {
+    fill: #2196F3;
+}
+
+.header-telephone:focus .header-phone-icon {
+    fill: #2196F3;
+}
+
+.header-line {
+    margin-top: 20px;
+    height: 1px;
+    background-color: rgba(236, 236, 236, 1); 
+    border: none;
+}
