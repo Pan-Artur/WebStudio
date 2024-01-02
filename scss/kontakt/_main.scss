@@ -3,18 +3,19 @@
     padding-bottom: 300px;
     background-image: radial-gradient(red,aqua);
     height: 600px;
-}
 
-.main-title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    &__title {
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    
 }

@@ -1,56 +1,57 @@
 .about-us {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__item::before {
+        content: '';
+        display: block;
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    &__item:nth-child(1)::before {
+        background-image: url(../img/antenna.png);
+        background-size: 70px;
+    }
+    
+    &__item:nth-child(2)::before {
+        background-image: url(../img/clock.png);
+        background-size: 70px;
+    }
+    
+    &__item:nth-child(3)::before {
+        background-image: url(../img/diagram.png);
+        background-size: 70px;
+    }
+    
+    &__item:nth-child(4)::before {
+        background-image: url(../img/astronaut.png);
+        background-size: 70px;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: #212121;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #757575;
+    }
 }
 
-.about-us-list {
-    display: flex;
-    gap: 30px;
-}
-
-.about-us-item::before {
-    content: '';
-    display: block;
-    background-color: #F5F4FA;
-    width: 270px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.about-us-item:nth-child(1)::before {
-    background-image: url(../img/antenna.png);
-    background-size: 70px;
-}
-
-.about-us-item:nth-child(2)::before {
-    background-image: url(../img/clock.png);
-    background-size: 70px;
-}
-
-.about-us-item:nth-child(3)::before {
-    background-image: url(../img/diagram.png);
-    background-size: 70px;
-}
-
-.about-us-item:nth-child(4)::before {
-    background-image: url(../img/astronaut.png);
-    background-size: 70px;
-}
-
-.about-us-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #212121;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-.about-us-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #757575;
-}

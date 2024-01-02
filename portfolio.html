@@ -9,40 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./scss/main.css">
-    <link rel="stylesheet" href="./scss/portfolio.css">
-    <link rel="stylesheet" href="./scss/modal.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+    <link rel="stylesheet" href="./css/modal.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="body">
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <nav class="header-navigation">
-                <a href="./index.html" class="header-logo">Web<span class="logo">Studio</span></a>
-                <ul class="header-list1">
-                    <li class="header-item">
-                        <a class="bottom-line header-link bottom-line1 studio-link" href="./index.html" target="_blank" rel="noopener noreferrer">Студія</a>
+            <nav class="header__navigation">
+                <a href="./index.html" class="header__logo">Web<span class="header__logo2">Studio</span></a>
+                <ul class="header__list1">
+                    <li class="header__item">
+                        <a class="bottom-line header__link bottom-line1 studio-link" href="./index.html" target="_blank" rel="noopener noreferrer">Студія</a>
                     </li>
-                    <li class="header-item">
-                        <a class="bottom-line header-link bottom-line2 portfolio-link" href="./portfolio.html" target="_blank" rel="noopener noreferrer">Портфоліо</a>
+                    <li class="header__item">
+                        <a class="bottom-line header__link bottom-line2 portfolio-link" href="./portfolio.html" target="_blank" rel="noopener noreferrer">Портфоліо</a>
                     </li>
-                    <li class="header-item">
-                        <a class="bottom-line header-link bottom-line3 kontakt-link" href="./kontakt.html" target="_blank" rel="noopener noreferrer">Контакти</a>
+                    <li class="header__item">
+                        <a class="bottom-line header__link bottom-line3 kontakt-link" href="./kontakt.html" target="_blank" rel="noopener noreferrer">Контакти</a>
                     </li>
                 </ul>
-                <ul class="header-list2">
-                    <li class="header-item">
-                        <a class="header-post" href="mailto:info@devstudio.com">
-                            <svg class="header-post-icon">
+                <ul class="header__list2">
+                    <li class="header__item">
+                        <a class="header__post" href="mailto:info@devstudio.com">
+                            <svg class="header__post-icon">
                                 <use href="./img/symbol-defs.svg#icon-email"></use>
                             </svg>
                             <span class="span-post">info@devstudio.com</span>
                         </a>
                     </li>
-                    <li class="header-item">
-                        <a class="header-telephone" href="tel:+380961111111">
-                            <svg class="header-phone-icon">
+                    <li class="header__item">
+                        <a class="header__phone" href="tel:+380961111111">
+                            <svg class="header__phone-icon">
                                 <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                             </svg>
                             <span class="span-phone">+38 096 111 11 11</span>
@@ -51,28 +50,28 @@
                 </ul>
             </nav>
         </div>
-        <hr class="header-line">
+        <hr class="header__line">
     </header>
     <!-- Main -->
     <main class="main">
         <!-- Tabs -->
         <section class="tabs">
             <div class="container">
-                <ul class="tabs-list">
-                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs-item">
-                        <button class="tabs-button tabs-button1" type="button">Усі</button>
+                <ul class="tabs__list">
+                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs__item">
+                        <button class="tabs__button tabs__button1" type="button">Усі</button>
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="1500" class="tabs-item">
-                        <button class="tabs-button tabs-button2" type="button">Веб-сайти</button>
+                    <li data-aos="fade-up" data-aos-duration="1500" class="tabs__item">
+                        <button class="tabs__button tabs__button2" type="button">Веб-сайти</button>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs-item">
-                        <button class="tabs-button tabs-button3" type="button">Додатки</button>
+                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs__item">
+                        <button class="tabs__button tabs__button3" type="button">Додатки</button>
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="1500" class="tabs-item">
-                        <button class="tabs-button tabs-button4" type="button">Дизайн</button>
+                    <li data-aos="fade-up" data-aos-duration="1500" class="tabs__item">
+                        <button class="tabs__button tabs__button4" type="button">Дизайн</button>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs-item">
-                        <button class="tabs-button tabs-button5" type="button">Маркетинг</button>
+                    <li data-aos="fade-down" data-aos-duration="1500" class="tabs__item">
+                        <button class="tabs__button tabs__button5" type="button">Маркетинг</button>
                     </li>
                 </ul>
             </div>
@@ -80,131 +79,131 @@
         <!-- Projects -->
         <section class="projects">
             <div class="container">
-                <ul class="projects-list">
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                <ul class="projects__list">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/technokryak.jpg" alt="1 проект">
+                                <img class="projects__photo" src="./img/technokryak.jpg" alt="1 проект">
                             </div>
-                            <h2 class="projects-title">Технокряк</h2>
-                            <p class="projects-type">Веб-сайт</p>
+                            <h2 class="projects__title">Технокряк</h2>
+                            <p class="projects__type">Веб-сайт</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/poster-new-orleanvs-golden-star.jpg" alt="2 проект">
+                                <img class="projects__photo" src="./img/poster-new-orleanvs-golden-star.jpg" alt="2 проект">
                             </div>
-                            <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                            <p class="projects-type">Дизайн</p>
+                            <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
+                            <p class="projects__type">Дизайн</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/restraunt-seafood.jpg" alt="3 проект">
+                                <img class="projects__photo" src="./img/restraunt-seafood.jpg" alt="3 проект">
                             </div>
-                            <h2 class="projects-title">Ресторан Seafood</h2>
-                            <p class="projects-type">Додаток</p>
+                            <h2 class="projects__title">Ресторан Seafood</h2>
+                            <p class="projects__type">Додаток</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/project-prime.jpg" alt="4 проект">
+                                <img class="projects__photo" src="./img/project-prime.jpg" alt="4 проект">
                             </div>
-                            <h2 class="projects-title">Проєкт Prime</h2>
-                            <p class="projects-type">Маркетинг</p>
+                            <h2 class="projects__title">Проєкт Prime</h2>
+                            <p class="projects__type">Маркетинг</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/project-boxes.jpg" alt="5 проект">
+                                <img class="projects__photo" src="./img/project-boxes.jpg" alt="5 проект">
                             </div>
-                            <h2 class="projects-title">Проєкт Boxes</h2>
-                            <p class="projects-type">Додаток</p>
+                            <h2 class="projects__title">Проєкт Boxes</h2>
+                            <p class="projects__type">Додаток</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/inspiration-has-no-borders.jpg" alt="6 проект">
+                                <img class="projects__photo" src="./img/inspiration-has-no-borders.jpg" alt="6 проект">
                             </div>
-                            <h2 class="projects-title">Inspiration has no Borders</h2>
-                            <p class="projects-type">Веб-сайт</p>
+                            <h2 class="projects__title">Inspiration has no Borders</h2>
+                            <p class="projects__type">Веб-сайт</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/limited-edition.jpg" alt="7 проект">
+                                <img class="projects__photo" src="./img/limited-edition.jpg" alt="7 проект">
                             </div>
-                            <h2 class="projects-title">Видання Limited Edition</h2>
-                            <p class="projects-type">Дизайн</p>
+                            <h2 class="projects__title">Видання Limited Edition</h2>
+                            <p class="projects__type">Дизайн</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/project-lab.jpg" alt="8 проект">
+                                <img class="projects__photo" src="./img/project-lab.jpg" alt="8 проект">
                             </div>
-                            <h2 class="projects-title">Проєкт LAB</h2>
-                            <p class="projects-type">Маркетинг</p>
+                            <h2 class="projects__title">Проєкт LAB</h2>
+                            <p class="projects__type">Маркетинг</p>
                         </a>
                     </li>
-                    <li data-aos="flip-right" data-aos-duration="2000" class="projects-item">
-                        <a class="projects-link" href="#">
-                            <div class="projects-box">
-                                <div class="projects-overlay">
-                                    <p class="projects-text">
+                    <li data-aos="flip-right" data-aos-duration="2000" class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="projects__box">
+                                <div class="projects__overlay">
+                                    <p class="projects__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
-                                <img class="projects-photo" src="./img/growing-business.jpg" alt="9 проект">
+                                <img class="projects__photo" src="./img/growing-business.jpg" alt="9 проект">
                             </div>
-                            <h2 class="projects-title">Growing Business</h2>
-                            <p class="projects-type">Додаток</p>
+                            <h2 class="projects__title">Growing Business</h2>
+                            <p class="projects__type">Додаток</p>
                         </a>
                     </li>
                 </ul>
@@ -213,48 +212,48 @@
     </main>
     <!-- Footer -->
     <footer data-aos="fade-up" data-aos-duration="1500" class="footer">
-        <div class="container footer-container">
-            <div data-aos="fade-up" data-aos-duration="1000" class="footer-info">
-                <a href="./index.html" class="footer-logo">Web<span class="logo2">Studio</span></a>
-                <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a class="footer-post" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="container footer__container">
+            <div data-aos="fade-up" data-aos-duration="1000" class="footer__info">
+                <a href="./index.html" class="footer__logo">Web<span class="footer__logo2">Studio</span></a>
+                <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__post" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="footer-item">
-                        <a class="footer-telephone" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="footer__item">
+                        <a class="footer__phone" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
-            <div data-aos="fade-down" data-aos-duration="1000" class="footer-contacts">
-                <h3 class="footer-title">
+            <div data-aos="fade-down" data-aos-duration="1000" class="footer__contacts">
+                <h3 class="footer__title">
                     Приєднуйтесь
                 </h3>
-                <ul class="footer-icons">
-                    <li class="footer-item-icons">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-icon">
+                <ul class="footer__icons">
+                    <li class="footer__item-icons">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__icon">
                                 <use href="./img/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item-icons">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-icon">
+                    <li class="footer__item-icons">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__icon">
                                 <use href="./img/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item-icons">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-icon">
+                    <li class="footer__item-icons">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__icon">
                                 <use href="./img/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item-icons">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-icon">
+                    <li class="footer__item-icons">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__icon">
                                 <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -274,7 +273,7 @@
                 </a>
             </form>
         </div>
-    </footer> 
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
