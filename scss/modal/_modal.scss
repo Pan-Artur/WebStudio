@@ -32,7 +32,7 @@
     width: 528px;
     min-height: 581px;
     border-radius: 4px;
-    background: #FFF;
+    background: $fifth-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding-top: 8px;
     padding-bottom: 50px;
@@ -57,11 +57,11 @@
         padding: 6px;
 
         &:hover .close-icon {
-            fill: #2196F3;
+            fill: $second-color;
         }
         
         &:focus .close-icon {
-            fill: #2196F3;
+            fill: $second-color;
         }
     }
     
@@ -76,13 +76,13 @@
         &:hover {
             width: 18px;
             height: 18px;
-            fill: #2196F3;
+            fill: $second-color;
         }
         
         &:focus {
             width: 18px;
             height: 18px;
-            fill: #2196F3;
+            fill: $second-color;
         }
     }
 
@@ -91,9 +91,9 @@
         padding-right: 40px;
 
         &-text {
-            color: #212121;
+            color: $main-color;
             text-align: center;
-            font-family: 'Roboto';
+            font-family: $main-font;
             font-size: 20px;
             font-weight: 700;
             letter-spacing: 0.6px;
@@ -123,8 +123,8 @@
             flex-direction: column;
 
             &-title {
-                color: #757575;
-                font-family: 'Roboto';
+                color: $sixth-color;
+                font-family: $main-font;
                 font-size: 12px;
                 font-weight: 400;
                 letter-spacing: 0.12px;
@@ -146,12 +146,12 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    border: 1px solid #2196F3;
+                    border: 1px solid $second-color;
                 }
 
                 input.modal__form-comment-input::placeholder {
                     color: rgba(117, 117, 117, 0.50);
-                    font-family: 'Roboto';
+                    font-family: $main-font;
                     font-size: 12px;
                     font-weight: 400;
                     letter-spacing: 0.12px;
@@ -162,8 +162,8 @@
         }
         
         &-name {
-            color: #757575;
-            font-family: 'Roboto';
+            color: $sixth-color;
+            font-family: $main-font;
             font-size: 12px;
             font-weight: 400;
             letter-spacing: 0.12px;
@@ -171,8 +171,8 @@
         }
         
         &-telephone {
-            color: #757575;
-            font-family: 'Roboto';
+            color: $sixth-color;
+            font-family: $main-font;
             font-size: 12px;
             font-weight: 400;
             letter-spacing: 0.12px;
@@ -180,8 +180,8 @@
         }
         
         &-post {
-            color: #757575;
-            font-family: 'Roboto';
+            color: $sixth-color;
+            font-family: $main-font;
             font-size: 12px;
             font-weight: 400;
             letter-spacing: 0.12px;
@@ -206,7 +206,7 @@
                 position: relative;
                 bottom: 29px;
                 left: 12px;
-                fill: #2196F3;
+                fill: $second-color;
             }
 
         }
@@ -225,19 +225,19 @@
         
             &:hover,
             &:focus {
-                border: 1px solid #2196F3;
+                border: 1px solid $second-color;
             }
             
             &:hover + .modal__form-link {
-                fill: #2196F3;
+                fill: $second-color;
             }
             
             &:focus + .modal__form-link {
-                fill: #2196F3;
+                fill: $second-color;
             }
             
             &:checked + .modal__form-link {
-                fill: #2196F3;
+                fill: $second-color;
             }
 
         }
@@ -253,18 +253,18 @@
         &-checkbox {
             width: 16px;
             height: 15px;
-            fill: #212121;
+            fill: $main-color;
 
             &:hover,
             &:focus {
-                fill: #2196F3;
+                fill: $second-color;
                 stroke: #FFF;
             }
         }
         
         &-text {
-            color: #757575;
-            font-family: 'Roboto';
+            color: $sixth-color;
+            font-family: $main-font;
             font-size: 14px;
             font-weight: 400;
             line-height: 1.71;
@@ -273,8 +273,8 @@
         }
         
         &-link {
-            color: #2196F3;
-            font-family: 'Roboto';
+            color: $second-color;
+            font-family: $main-font;
             font-size: 14px;
             font-weight: 400;
             line-height: 1.71;
@@ -287,7 +287,7 @@
     &__button {
         color: #FFF;
         text-align: center;
-        font-family: 'Roboto';
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 1.87;
@@ -295,7 +295,7 @@
         width: 200px;
         height: 50px;
         border-radius: 4px;
-        background-color: #2196F3;
+        background-color: $second-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         margin-right: 52px;
         margin-top: 30px;
@@ -311,8 +311,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover {
-            color: #2196F3;
-            background-color: #212121;
+            color: $second-color;
+            background-color: $main-color;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         }
 

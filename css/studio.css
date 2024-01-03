@@ -517,9 +517,9 @@ button {
   top: 1432px;
 }
 .work__subtitle {
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -774,7 +774,7 @@ button {
   padding-top: 12px;
 }
 .footer__title {
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -788,13 +788,13 @@ button {
 .footer__icon {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: #FFFFFF;
 }
 .footer .subscribe {
   padding-top: 12px;
 }
 .footer .subscribe-title {
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -852,7 +852,7 @@ button {
 .footer .subscribe-button {
   width: 200px;
   height: 50px;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
   font-size: 16px;
   font-weight: 700;

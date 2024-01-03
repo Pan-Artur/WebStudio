@@ -12,7 +12,7 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
-        color: #212121;
+        color: $main-color;
         margin-bottom: 50px;
     }
     
@@ -39,9 +39,9 @@
     }
     
     &__subtitle {
-        color: #FFF;
+        color: $fifth-color;
         text-align: center;
-        font-family: Roboto;
+        font-family: $main-font;
         font-size: 14px;
         font-style: normal;
         font-weight: 700;

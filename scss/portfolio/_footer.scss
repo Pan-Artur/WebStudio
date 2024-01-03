@@ -1,5 +1,5 @@
 .footer {
-    background: #2F303A;
+    background: $seventh-color;
     left: 0px;
     top: 2094px;
     padding-top: 60px;
@@ -11,19 +11,19 @@
     }
 
     &__logo {
-        font-family: 'Raleway';
+        font-family: $second-font;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: #2196F3;
+        color: $second-color;
     }
 
     &__logo2 {
-        font-family: 'Raleway';
+        font-family: $second-font;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: #FFFFFF;
+        color: $fifth-color;
     }
 
     &__address {
@@ -31,7 +31,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        color: #FFFFFF;
+        color: $fifth-color;
         margin-top: 20px;
     }
 
@@ -50,11 +50,11 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover {
-                background-color: #2196F3;
+                background-color: $second-color;
             }
 
             &:focus {
-                background-color: #2196F3;
+                background-color: $second-color;
 
                 transition-property: background-color;
                 transition-duration: 250ms;
@@ -68,14 +68,14 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        color: #757575;
+        color: $sixth-color;
     }
 
     &__telephone {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        color: #757575;
+        color: $sixth-color;
     }
 
     &__contacts {
@@ -106,7 +106,7 @@
         padding-top: 12px;
 
         &-title {
-            color: #FFF;
+            color: $fifth-color;
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 0.42px;
@@ -131,11 +131,11 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover {
-                border: 1px solid #2196F3;
+                border: 1px solid $second-color;
             }
 
             &:focus {
-                border: 1px solid #2196F3;
+                border: 1px solid $second-color;
 
                 transition-property: border;
                 transition-duration: 250ms;
@@ -160,14 +160,14 @@
         &-button {
             width: 200px;
             height: 50px;
-            color: #FFF;
+            color: $fifth-color;
             text-align: center;
             font-size: 16px;
             font-weight: 700;
             line-height: 1.87;
             letter-spacing: 0.96px;
             border-radius: 4px;
-            background: #2196F3;
+            background: $second-color;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             padding-left: 28px;
             padding-right: 62px;
@@ -177,13 +177,13 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover {
-                color: #2196F3;
-                background: #212121;
+                color: $second-color;
+                background: $main-color;
             }
 
             &:focus {
-                color: #2196F3;
-                background: #212121;
+                color: $second-color;
+                background: $main-color;
 
                 transition-property: color, background-color;
                 transition-duration: 250ms;
@@ -199,11 +199,11 @@
             top: 7px;
 
             &:hover .subscribe-button {
-                fill: #212121;
+                fill: $main-color;
             }
 
             &:focus .subscribe-button {
-                fill: #212121;
+                fill: $main-color;
 
                 transition-property: color, background-color;
                 transition-duration: 250ms;

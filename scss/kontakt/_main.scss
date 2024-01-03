@@ -1,14 +1,14 @@
 .main {
     padding-top: 250px;
     padding-bottom: 300px;
-    background-image: radial-gradient(red,aqua);
+    background-image: radial-gradient(red, aqua);
     height: 600px;
 
     &__title {
         width: 696px;
         margin-left: auto;
         margin-right: auto;
-        font-family: 'Roboto';
+        font-family: $main-font;
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -17,5 +17,5 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
-    
+
 }

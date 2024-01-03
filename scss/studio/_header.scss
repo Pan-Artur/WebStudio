@@ -16,11 +16,11 @@
     }
 
     &__logo {   
-        font-family: 'Raleway';
+        font-family: $second-font;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: #2196F3;
+        color: $second-color;
         margin-right: 93px;
 
         transition-property: color;
@@ -28,11 +28,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover {   
-            color: #000000;
+            color: $third-color;
         }
 
         &:focus {
-            color: #000000;
+            color: $third-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -40,11 +40,11 @@
         }
 
         &logo:hover .logo {
-            color: #2196F3;
+            color: $second-color;
         }
 
         &logo:focus .logo {
-            color: #2196F3;
+            color: $second-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -53,22 +53,22 @@
     }   
 
     .header__logo2 {
-        font-family: 'Raleway';
+        font-family: $second-font;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.38;
-        color: #000000;
+        color: $third-color;
 
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover {
-            color: #2196F3;
+            color: $second-color;
         }
 
         &:focus {
-            color: #2196F3;
+            color: $second-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -95,14 +95,14 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
         }
 
         &:focus {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -115,7 +115,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        color: #2196F3;
+        color: $second-color;
     }
     
     .bottom-line::after {
@@ -124,7 +124,7 @@
         width: 48px;
         height: 4px; 
         border-radius: 2px;
-        background-color: #2196F3;
+        background-color: $second-color;
         position: relative;
         top: 28px;
         right: 2px;
@@ -148,14 +148,14 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
         }
 
         &:focus {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -165,7 +165,7 @@
     }
 
     .portfolio-link {
-        color: #212121;
+        color: $main-color;
     }
 
     .bottom-line2::after {
@@ -205,14 +205,14 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
         }
 
         &:focus {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
 
             transition-property: color;
             transition-duration: 250ms;
@@ -222,11 +222,11 @@
     }
 
     .kontakt-link {
-        color: #212121;
+        color: $main-color;
     }
     
     .kontakt-link:hover {
-        color: #2196F3;
+        color: $second-color;
     }
 
     .bottom-line::after {
@@ -234,7 +234,7 @@
         content: '';
         height: 4px; 
         border-radius: 2px;
-        background-color: #2196F3;
+        background-color: $second-color;
         position: relative;
         top: 28px;
         right: 2px;
@@ -280,7 +280,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        color: #757575;
+        color: $sixth-color;
         text-align: center;
 
         transition-property: color;
@@ -291,14 +291,14 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
         }
     
         &:focus {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
     
             transition-property: color;
             transition-duration: 250ms;
@@ -306,11 +306,11 @@
         }
 
         &:hover &-icon {
-            fill: #2196F3;
+            fill: $second-color;
         }
     
         &:focus &-icon {
-            fill: #2196F3;
+            fill: $second-color;
     
             transition-property: color;
             transition-duration: 250ms;
@@ -321,7 +321,7 @@
     &__post-icon {
         width: 16px;
         height: 12px; 
-        fill: #757575;
+        fill: $sixth-color;
         margin-right: 8px;
 
         transition-property: fill;
@@ -331,7 +331,7 @@
         &:hover {
             width: 16px;
             height: 12px; 
-            fill: #2196F3;
+            fill: $second-color;
         }
     }
 
@@ -339,7 +339,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        color: #757575;
+        color: $sixth-color;
         display: flex;
         justify-content: center;
 
@@ -351,14 +351,14 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
         }
     
         &:focus {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            color: #2196F3;
+            color: $second-color;
     
             transition-property: color;
             transition-duration: 250ms;
@@ -366,11 +366,11 @@
         }
 
         &:hover &-icon {
-            fill: #2196F3;
+            fill: $second-color;
         }
     
         &:focus &-icon {
-            fill: #2196F3;
+            fill: $second-color;
     
             transition-property: color;
             transition-duration: 250ms;
@@ -381,7 +381,7 @@
     &__phone-icon {
         width: 10px;
         height: 16px; 
-        fill: #757575;
+        fill: $sixth-color;
         margin-right: 8px;
 
         transition-property: fill;
@@ -391,13 +391,13 @@
         &__phone-icon:hover {
             width: 10px;
             height: 16px; 
-            fill: #2196F3;
+            fill: $second-color;
         }
 
         &__phone-icon:focus {
             width: 16px;
             height: 12px; 
-            fill: #2196F3;
+            fill: $second-color;
     
             transition-property: fill;
             transition-duration: 250ms;
@@ -411,4 +411,5 @@
         background-color: rgba(236, 236, 236, 1); 
         border: none;
     }
+    
 }

@@ -12,7 +12,7 @@
         width: 696px;
         margin-left: auto;
         margin-right: auto;
-        font-family: 'Roboto';
+        font-family: $main-font;
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -20,7 +20,7 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $fifth-color;
     }
     
     &__button {
@@ -32,8 +32,8 @@
         text-align: center;
         justify-content: center;
         letter-spacing: 0.06em;
-        color: #FFFFFF;
-        background: #2196F3;
+        color: $fifth-color;
+        background: $second-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         margin-top: 43px;
@@ -46,13 +46,13 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            color: #2196F3;
-            background: #212121;
+            color: $second-color;
+            background: $main-color;
         }
         
         &:focus {
-            color: #2196F3;
-            background: #212121;
+            color: $second-color;
+            background: $main-color;
         
             transition-property: color, background-color;
             transition-duration: 250ms;
