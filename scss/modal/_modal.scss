@@ -137,6 +137,7 @@
                 border-radius: 4px;
                 border: 1px solid rgba(33, 33, 33, 0.20);
                 padding: 12px 16px 94px 16px;
+                outline: none;
             
                 transition-property: border;
                 transition-duration: 250ms;
@@ -148,7 +149,7 @@
                     border: 1px solid #2196F3;
                 }
 
-                input.modal__comment-form-input::placeholder {
+                input.modal__form-comment-input::placeholder {
                     color: rgba(117, 117, 117, 0.50);
                     font-family: 'Roboto';
                     font-size: 12px;

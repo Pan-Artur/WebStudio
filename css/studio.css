@@ -82,7 +82,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .logo {
+.header .header__logo2 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -92,10 +92,10 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .logo:hover {
+.header .header__logo2:hover {
   color: #2196F3;
 }
-.header .logo:focus {
+.header .header__logo2:focus {
   color: #2196F3;
   transition-property: color;
   transition-duration: 250ms;
