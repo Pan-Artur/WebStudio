@@ -8,11 +8,10 @@
     }
     
     &__item::before {
-        content: '';
         display: block;
+        content: '';
+        @include size (270px, 120px);
         background-color: $eighth-color;
-        width: 270px;
-        height: 120px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -39,19 +38,14 @@
     }
     
     &__title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $main-color;
         margin-bottom: 10px;
         margin-top: 30px;
+
+        @include text-color-styles($main-color, 700);
     }
     
     &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        color: $sixth-color;
+        @include text-color-styles($sixth-color, 400, 1.71);
     }
 }
 

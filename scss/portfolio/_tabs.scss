@@ -10,72 +10,50 @@
     }
 
     &__button {
-        height: 38px;
         top: 174px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
+        height: 38px;
+        @include text-color-styles($main-color, 16px, 1.62);
         letter-spacing: 0.03em;
-        color: $main-color;
         background: $eighth-color;
         border-radius: 4px;
-
-        transition-property: color background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %first-transition;
     
         &:hover {
-            background: $second-color;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.62;
-            color: $fifth-color;
+            @include text-color-styles($fifth-color, 16px, 1.62);
+            @include BBB ($second-color, 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12), 4px);
         }
     
         &:focus {
-            background: $second-color;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.62;
-            color: $fifth-color;
-    
-            transition-property: color background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include text-color-styles($fifth-color, 16px, 1.62);
+            @include BBB ($second-color, 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12), 4px);
+            @extend %first-transition;
         }
-
     }
 
     &__button1 {
-        width: 73px;
         left: 512px;
+        width: 73px;
     }
 
     &__button2 {
-        width: 125px;
         left: 593px;
+        width: 125px;
     }
 
     &__button3 {
-        width: 112px;
         left: 726px;
-        border-radius: 4px;
+        width: 112px;
     }
 
     &__button4 {
-        width: 103px;
         left: 846px;
+        width: 103px;
     }
 
     &__button5 {
-        width: 130px;
         left: 957px;
+        width: 130px;
     }
-
 }
 
 

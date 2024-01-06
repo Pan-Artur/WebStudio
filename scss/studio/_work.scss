@@ -9,17 +9,13 @@
     
     &__title {
         text-align: center;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        color: $main-color;
         margin-bottom: 50px;
+        @include text-color-styles($main-color, 700, 36px, 1.17);
     }
     
     &__item {
-        width: 370px;
-        height: 294px;
         top: 1057px;
+        @include size (370px, 294px);
 
         &:first-child {
             margin-left: auto;
@@ -31,21 +27,14 @@
     }
     
     &__box {
+        @extend %work-box-position;
         width: 370px;
         background: rgba(47, 48, 58, 0.80); 
-        padding: 27px 27px;
-        position: absolute;
-        top: 1432px;
     }
     
     &__subtitle {
-        color: $fifth-color;
         text-align: center;
-        font-family: $main-font;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include text-color-styles($fifth-color, 700, normal);
         letter-spacing: 0.42px;
         text-transform: uppercase; 
     }

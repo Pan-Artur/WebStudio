@@ -1,9 +1,6 @@
 .team {
-    left: 0px;
-    top: 1446px;
+    @extend %team-position;
     background: $eighth-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
 
     &__list {
         display: flex;
@@ -12,26 +9,19 @@
     
     &__item {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        width: 270px;
-        height: 428px;
-        background: $fifth-color;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+        flex-wrap: wrap;
+        @include size(270px, 428px);
+        @include BBB($fifth-color, 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px 4px);
 
         &-icons {
             position: relative;
-            width: 44px;
-            height: 44px;
+            padding: 12px;
+            @include size ();
             fill: $fourth-color; 
             background-color: $fifth-color;
             border-radius: 50%;
-            padding: 12px;
-        
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %third-transition;
         
             &:hover {
                 background-color: $second-color;
@@ -46,61 +36,43 @@
                 fill: $fifth-color;
                 background-color: $second-color;
             }
-
         }
-    
     }
     
     &__title {
         text-align: center;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        color: $main-color;
         margin-bottom: 50px;
+        @include text-color-styles($main-color, 700, 36px, 1.17);
     }
     
     &__photo {
-        width: 270px;
-        height: 260px;
-        left: 215px;
-        top: 1632px;
-        margin-bottom: 30px;
+        @extend %team-photo-position;
+        @include size (270px, 260px);
     }
     
     &__name-title {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        color: $main-color;
         text-align: center;
         margin-bottom: 10px;
+        @include text-color-styles($main-color, 16px, 1.19);
     }
     
     &__profession {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-        color: $sixth-color;
         text-align: center;
         margin-bottom: 16px;
+        @include text-color-styles($sixth-color, 400, 16px, 1.19);
     }
     
     &__icons {
         display: flex;
-        gap: 10px;
         justify-content: center;
+        gap: 10px;
     }
     
     &__icon {
-        width: 20px;
-        height: 20px;
+        @include size(20px, 20px);
         fill: $fourth-color;
         background-color: $fifth-color;
-    
-        transition-property: fill, background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %sixth-transition;
 
         &:hover {
             fill: $fifth-color;

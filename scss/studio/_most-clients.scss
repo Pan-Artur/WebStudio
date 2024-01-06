@@ -4,46 +4,34 @@
 
     &__title {
         text-align: center;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        color: $main-color;
         margin-bottom: 50px;
+        @include text-color-styles($main-color, 700, 36px, 1.17);
     }
     
     &__list {
         display: flex;
-        gap: 30px;
         text-align: center;
         justify-content: center;
+        gap: 30px;
     }
     
     &__item {
-        width: 170px;
-        height: 92px; 
+        @include size (170px, 92px);
         border: 1px solid $fourth-color;
         border-radius: 4px;
-    
-        transition-property: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %fifth-transition;
 
         &:hover {
-            width: 170px;
-            height: 92px; 
+            @include size (170px, 92px);
             border: 1px solid $second-color;
             border-radius: 4px;
         }
         
         &:focus .most-clients__link {
-            width: 170px;
-            height: 92px; 
+            @include size (170px, 92px);
             border: 1px solid $second-color;
             border-radius: 4px;
-        
-            transition-property: border-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %fifth-transition;
         }
 
         &:hover .most-clients__icon {
@@ -52,10 +40,7 @@
         
         &:focus .most-clients__icon {
             fill: $second-color;
-        
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %fourth-transition;
         }
     }
     
@@ -63,18 +48,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%; 
+        @include size (100%, 100%);
     }
     
     &__icon {
-        width: 106px;
-        height: 60px; 
+        @include size (106px, 60px);
         fill: $fourth-color;
-    
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %fourth-transition;
     
         &:hover svg {
             fill: $second-color;
@@ -82,12 +62,8 @@
         
         &:focus svg {
             fill: $second-color;
-        
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %fourth-transition;
         }
     }
-    
 }
 

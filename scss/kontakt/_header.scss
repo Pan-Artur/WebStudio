@@ -1,12 +1,7 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    @extend %header-position;
+    @include size (100%, 80px);
     background: rgba(255, 255, 255, 0.933);
-    width: 100%;
 
     &__navigation {
         display: flex;
@@ -14,16 +9,10 @@
     }
 
     &__logo {
-        font-family: $second-font;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: $second-color;
         margin-right: 93px;
-
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-family: $second-font;
+        @include text-color-styles($second-color, 700, 26px, 1.19);
+        @extend %second-transition;
     
         &:hover {
             color: $third-color;
@@ -36,14 +25,8 @@
 
     &__logo2 {
         font-family: $second-font;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.38;
-        color: $third-color;
-
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include text-color-styles($third-color, 700, 26px, 1.38);
+        @extend %second-transition;
     
         &:hover {
             color: $second-color;
@@ -62,40 +45,26 @@
 
     &__list2 {
         display: flex;
-        gap: 50px;
         margin-left: auto;
+        gap: 50px;
     }
 
     .kontakt-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $second-color;
+        @include text-color-styles();
     }
 
     .bottom-line::after {
-        display: block;
-        content: '';
-        width: 64px;
-        height: 4px;
+        @extend %bottom-line;
+        @include size(64px, 4px);
         border-radius: 2px;
         background-color: $second-color;
-        position: relative;
-        top: 28px;
-        right: 2px;
-
-        transition-property: width;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %seventh-transition;
     }
 
     .bottom-line1::after {
         opacity: 1;
         width: 0px;
-
-        transition-property: width;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %seventh-transition;
     }
 
     .bottom-line1:hover::after {
@@ -106,10 +75,7 @@
     .bottom-line2::after {
         opacity: 1;
         width: 0px;
-
-        transition-property: width;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %seventh-transition;
     }
 
     .bottom-line2:hover::after {
@@ -118,49 +84,24 @@
     }
 
     &__link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $main-color;
         align-items: center;
-
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include text-color-styles($main-color);
+        @extend %second-transition;
     
         &:hover,
         &:focus {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            color: $second-color;
+            @include text-color-styles();
         }
     }
 
     &__post {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $sixth-color;
-        text-align: center;
+        @extend %header-post-position;
+        @include text-color-styles($sixth-color);
+        @extend %second-transition;
 
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
         &:hover,
         &:focus {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            color: $second-color;
-    
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include text-color-styles();
         }
 
         &:hover .header__post-icon {
@@ -169,89 +110,51 @@
 
         &:focus .header__post-icon {
             fill: $second-color;
-
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %second-transition;
         }
 
         &-icon {
-            width: 16px;
-            height: 12px;
-            fill: $sixth-color;
             margin-right: 8px;
+            @include size(16px, 12px);
+            fill: $sixth-color;
+            @extend %fourth-transition;
 
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
             &:hover,
             &:focus {
-                width: 16px;
-                height: 12px;
                 fill: $second-color;
             }
-
         }
-
     }
 
     &__phone {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $sixth-color;
         display: flex;
         justify-content: center;
-
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include text-color-styles($sixth-color);
+        @extend %second-transition;
 
         &-icon {
-            width: 10px;
-            height: 16px;
-            fill: $sixth-color;
+            @include size(10px, 16px);
             margin-right: 8px;
-
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            fill: $sixth-color;
+            @extend %fourth-transition;
 
             &:hover {
-                width: 10px;
-                height: 16px;
                 fill: $second-color;
             }
 
             &:focus {
-                width: 10px;
-                height: 16px;
                 fill: $second-color;
-
-                transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @extend %fourth-transition;
             }
-
         }
 
         &:hover {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            color: $second-color;
+            @include text-color-styles();
         }
 
         &:focus {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            color: $second-color;
-
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include text-color-styles();
+            @extend %second-transition;
         }
 
         &:hover .header__phone-icon {
@@ -261,8 +164,6 @@
         &:focus .header__phone-icon {
             fill: $second-color;
         }
-
     }
-
 }
 

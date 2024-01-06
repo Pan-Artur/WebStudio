@@ -1,7 +1,9 @@
 @import './common/base.scss';
 @import './common/reset.scss';
 
-@import './utils/veriables';
+@import './utils/veriables.scss';
+@import './utils/mixins.scss';
+@import './utils/placeholders';
 
 @import './portfolio/header.scss';
 @import './portfolio/tabs.scss';

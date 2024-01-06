@@ -1,9 +1,6 @@
 .footer {
+    @extend %footer-position;
     background: $seventh-color;
-    left: 0px;
-    top: 2094px;
-    padding-top: 60px;
-    padding-bottom: 60px;
 
     &__container {
         display: flex;
@@ -12,42 +9,29 @@
 
     &__logo {
         font-family: $second-font;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: $second-color;
+        @include text-color-styles(700, 26px, 1.19);
     }
 
     &__logo2 {
         font-family: $second-font;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: $fifth-color;
+        @include text-color-styles($fifth-color, 700, 26px, 1.19);
     }
 
     &__address {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        color: $fifth-color;
         margin-top: 20px;
+
+        @include text-color-styles($fifth-color, 400, 1.71);
     }
 
     &__item {
         margin-top: 9px;
 
         &-icons {
-            width: 44px;
-            height: 44px;
+            padding: 12px;
+            @include size ();
             background-color: rgba(255, 255, 255, 0.10);
             border-radius: 50%;
-            padding: 12px;
-
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %third-transition;
 
             &:hover {
                 background-color: $second-color;
@@ -55,27 +39,17 @@
 
             &:focus {
                 background-color: $second-color;
-
-                transition-property: background-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @extend %third-transition;
             }
         }
-
     }
 
     &__post {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        color: $sixth-color;
+        @include text-color-styles($fifth-color, 400, 1.71);
     }
 
     &__telephone {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        color: $sixth-color;
+        @include text-color-styles($fifth-color, 1.71);
     }
 
     &__contacts {
@@ -83,12 +57,10 @@
     }
 
     &__title {
-        color: #FFF;
-        font-size: 14px;
-        font-weight: 700;
+        margin-bottom: 20px;
+        @include text-color-styles($fifth-color, 700, normal);
         letter-spacing: 0.42px;
         text-transform: uppercase;
-        margin-bottom: 20px;
     }
 
     &__icons {
@@ -97,38 +69,26 @@
     }
 
     &__icon {
-        width: 20px;
-        height: 20px;
-        fill: white;
+        @include size (20px, 20px);
+        fill: $fifth-color;
     }
 
     .subscribe {
         padding-top: 12px;
 
         &-title {
-            color: $fifth-color;
-            font-size: 14px;
-            font-weight: 700;
+            margin-bottom: 20px;
+            @include text-color-styles($fifth-color, 700, normal);
             letter-spacing: 0.42px;
             text-transform: uppercase;
-            margin-bottom: 20px;
         }
 
         &-input {
-            width: 358px;
-            height: 50px;
-            border-radius: 4px;
+            @extend %footer-input-position;
+            @include size (358px, 50px);
             border: 1px solid rgba(255, 255, 255, 0.30);
-            background: rgba(33, 150, 243, 0.00);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            padding-top: 15px;
-            padding-left: 16px;
-            padding-bottom: 15px;
-            margin-right: 12px;
-
-            transition-property: border;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include BBB (rgba(33, 150, 243, 0.00), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
+            @extend %fifth-transition;
 
             &:hover {
                 border: 1px solid $second-color;
@@ -136,45 +96,24 @@
 
             &:focus {
                 border: 1px solid $second-color;
-
-                transition-property: border;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @extend %fifth-transition;
             }
-
         }
 
         input.subscribe-input::placeholder {
-            display: flex;
-            width: 47px;
-            height: 20px;
-            flex-direction: column;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.60);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.25;
+            @extend %footer-inputP-position;
+            @include size (47px, 20px);
+            @include text-color-styles(rgba(255, 255, 255, 0.60), 400, 16px, 1.25);
             letter-spacing: 0.48px;
         }
 
         &-button {
-            width: 200px;
-            height: 50px;
-            color: $fifth-color;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 1.87;
+            @extend %footer-button-position;
+            @include size (200px, 50px);
+            @include text-color-styles($fifth-color, 700, 16px, 1.87);
             letter-spacing: 0.96px;
-            border-radius: 4px;
-            background: $second-color;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            padding-left: 28px;
-            padding-right: 62px;
-
-            transition-property: color, background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include BBB ($second-color, 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
+            @extend %first-transition;
 
             &:hover {
                 color: $second-color;
@@ -184,19 +123,15 @@
             &:focus {
                 color: $second-color;
                 background: $main-color;
-
-                transition-property: color, background-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @extend %first-transition;
             }
         }
 
         &-icon {
-            width: 24px;
-            height: 24px;
             position: relative;
             right: 57px;
             top: 7px;
+            @include size (24px, 24px);
 
             &:hover .subscribe-button {
                 fill: $main-color;
@@ -204,14 +139,8 @@
 
             &:focus .subscribe-button {
                 fill: $main-color;
-
-                transition-property: color, background-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @extend %first-transition;
             }
-
         }
-
     }
-
 }

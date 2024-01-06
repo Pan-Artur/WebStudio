@@ -1,21 +1,16 @@
 .main {
     padding-top: 250px;
     padding-bottom: 300px;
-    background-image: radial-gradient(red, aqua);
     height: 600px;
+    background-image: radial-gradient(red, aqua);
 
     &__title {
-        width: 696px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
-        text-align: center;
+        width: 696px;
+        @include text-styles(900, 44px, 1.36);
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
-
 }

@@ -136,9 +136,6 @@ button {
   color: #2196F3;
   width: 60px;
 }
-.header .kontakt-link {
-  color: #212121;
-}
 .header .bottom-line::after {
   display: block;
   content: "";

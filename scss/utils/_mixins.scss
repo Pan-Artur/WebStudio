@@ -1,0 +1,28 @@
+@mixin text-styles($fontW: 700, $fontS: 16px, $lineH: 1.87) {
+    font-weight: $fontW;
+    font-size: $fontS;
+    line-height: $lineH;
+}
+
+@mixin text-color-styles($color: $second-color, $fontW: 500, $fontS: 14px, $lineH: 1.14) {
+    color: $color;
+    font-weight: $fontW;
+    font-size: $fontS;
+    line-height: $lineH;
+}
+
+@mixin size($width: 44px, $height: 44px) {
+    width: $width;
+    height: $height;
+}
+
+@mixin BBB($background, $box-shadow, $border-radius) {
+    background: $background;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+}
+
+@mixin opacity-width ($opacity, $width) {
+    opacity: $opacity;
+    width: $width;
+}
