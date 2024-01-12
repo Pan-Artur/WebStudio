@@ -54,25 +54,21 @@
     }
 
     &__link {
-        @include text-color-styles();
+        @include text-color-styles($main-color);
         @extend %second-transition;
 
         &:hover {
-            @include text-color-styles();
+            @include text-color-styles($second-color);
         }
 
         &:focus {
-            @include text-color-styles();
+            @include text-color-styles($second-color);
             @extend %second-transition;
         }
     }
 
     .studio-link {
         @include text-color-styles();
-    }
-
-    .portfolio-link {
-        color: $main-color;
     }
 
     .kontakt-link {

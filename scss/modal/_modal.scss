@@ -25,7 +25,7 @@
 .modal {
     @extend %modal-position;
     @include size (528px, 581px);
-    @include BBB ($fifth-color, 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 4px);
+    @include BBB ($fifth-color, $third-box-shadow, 4px);
     transform: translate( -50%, -50%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)  250ms;
 

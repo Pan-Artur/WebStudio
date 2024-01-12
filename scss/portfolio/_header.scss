@@ -11,7 +11,7 @@
     &__logo {
         margin-right: 93px;
         font-family: $second-font;
-        @include text-color-styles(700, 26px, 1.19);
+        @include text-color-styles($second-color, 700, 26px, 1.19);
         @extend %second-transition;
     
         &:hover {
@@ -56,15 +56,15 @@
 
     &__link {
         align-items: center;
-        @include text-color-styles($second-color, 14px, 1.14);
+        @include text-color-styles($main-color);
         @extend %second-transition;
 
         &:hover {
-            @include text-color-styles();
+            @include text-color-styles($second-color);
         }
 
         &:focus {
-            @include text-color-styles();
+            @include text-color-styles($second-color);
             @extend %second-transition;
         }
     }

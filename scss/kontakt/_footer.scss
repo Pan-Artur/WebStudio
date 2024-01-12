@@ -9,7 +9,7 @@
 
     &__logo {
         font-family: $second-font;
-        @include text-color-styles(700, 26px, 1.19);
+        @include text-color-styles($second-color, 700, 26px, 1.19);
     }
 
     &__logo2 {
@@ -20,6 +20,7 @@
     &__address {
         margin-top: 20px;
         @include text-color-styles($fifth-color, 400, 1.71);
+        font-style: normal;
     }
 
     &__item {
@@ -44,11 +45,11 @@
     }
 
     &__post {
-        @include text-color-styles($fifth-color, 400, 1.71);
+        @include text-color-styles($sixth-color, 400, 1.71);
     }
 
     &__telephone {
-        @include text-color-styles($fifth-color, 1.71);
+        @include text-color-styles($sixth-color, 1.71);
     }
 
     &__contacts {

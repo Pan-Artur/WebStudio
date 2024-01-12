@@ -15,10 +15,12 @@
     
     &__button {
         @extend %topic-button-position;
-        @include text-color-styles($fifth-color);
+        @include text-color-styles($fifth-color, 700, 16px, 1.14);
         letter-spacing: 0.06em;
         @include BBB($second-color, 0px 4px 4px rgba(0, 0, 0, 0.15), 4px);
         @extend %first-transition;
+        width: 216px;
+        height: 50px;
 
         &:hover {
             color: $second-color;
