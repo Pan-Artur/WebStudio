@@ -5,6 +5,7 @@
 
     &__navigation {
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
@@ -13,6 +14,11 @@
         font-family: $second-font;
         @include text-color-styles($second-color, 700, 26px, 1.19);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 88px;
+            width: 134px;
+        }
     
         &:hover {   
             color: $third-color;
@@ -48,9 +54,49 @@
         }
     }
 
+    &__menu {
+        display: none;
+        content: '';
+        @include size(40px, 40px);
+        margin-left: auto;
+
+        @media screen and (min-width: 320px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu-icon {
+        @include size(100%, 100%);
+        fill: black;
+
+        @media screen and (min-width: 320px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &__list1 {
-        display: flex;
+        display: none;
         gap: 50px;
+
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: auto;
+        }
     }
 
     &__link {
@@ -117,12 +163,38 @@
 
     &__list2 {
         @extend %header-list2-position;
+
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            gap: 12px;
+            margin-right: 15px;
+            margin-left: 96px;
+            display: flex;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+            margin-left: auto;
+        }
     }
 
     &__post {
         @extend %header-post-position;
         @include text-color-styles($sixth-color);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
     
         &:hover {
             @include text-color-styles();
@@ -150,17 +222,23 @@
         @extend %fourth-transition;
     
         &:hover {
-            @include size (16px, 12px);
-
             fill: $second-color;
         }
     }
 
     &__phone {
         display: flex;
-        justify-content: center;
         @include text-color-styles($sixth-color);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+            font-size: 14px;
+        }
     
         &:hover {
             @include text-color-styles();

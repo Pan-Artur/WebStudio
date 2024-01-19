@@ -14,7 +14,7 @@
     }
     
     &__item {
-        top: 1057px;
+        top: 1060px;
         @include size (370px, 294px);
 
         &:first-child {
@@ -34,7 +34,7 @@
     
     &__subtitle {
         text-align: center;
-        @include text-color-styles($fifth-color, 700, normal);
+        @include text-color-styles($fifth-color, 700, 14px, normal);
         letter-spacing: 0.42px;
         text-transform: uppercase; 
     }

@@ -4,12 +4,17 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: solid red; */
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -79,8 +84,8 @@ button {
   left: 0;
   z-index: 4;
   opacity: 4;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header .bottom-line::after {
