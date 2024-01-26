@@ -1,6 +1,15 @@
 body {
   font-family: "Roboto";
-  padding-top: 80px;
+}
+@media screen and (min-width: 320px) {
+  body {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .container {
@@ -11,9 +20,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -87,12 +106,10 @@ button {
 .topic__button {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   margin-top: 43px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px, 32px, 10px, 32px;
 }
 
 .topic {
@@ -123,8 +140,8 @@ button {
   left: 0;
   z-index: 4;
   opacity: 4;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .bottom-line::after {
@@ -195,8 +212,22 @@ button {
 
 .header {
   width: 100%;
-  height: 80px;
   background: rgba(255, 255, 255, 0.933);
+}
+@media screen and (min-width: 320px) {
+  .header {
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__navigation {
   display: flex;
@@ -211,10 +242,22 @@ button {
   font-size: 26px;
   line-height: 1.19;
 }
+@media screen and (min-width: 320px) {
+  .header__logo {
+    padding-top: 6px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
     width: 134px;
+    font-size: 24px;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
   }
 }
 .header__logo:hover {
@@ -235,6 +278,12 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
+}
+@media screen and (min-width: 768px) {
+  .header__logo2 {
+    width: 134px;
+    font-size: 24px;
+  }
 }
 .header__logo2:hover {
   color: #2196F3;
@@ -328,6 +377,18 @@ button {
   height: 4px;
   border-radius: 2px;
   background-color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .header .bottom-line::after {
+    position: relative;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .bottom-line::after {
+    position: relative;
+    top: 28px;
+  }
 }
 .header .bottom-line2::after {
   opacity: 1;
@@ -469,21 +530,69 @@ button {
   height: 12px;
   fill: #2196F3;
 }
+@media screen and (min-width: 320px) {
+  .header__line {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__line {
+    margin-top: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__line {
+    margin-top: 20px;
+  }
+}
+
 .topic {
-  height: 600px;
   background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/topic-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 320px) {
+  .topic {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .topic {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topic {
+    height: 600px;
+    padding-top: 200px;
+  }
 }
 .topic__title {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .topic__title {
+    font-size: 26px;
+    max-width: 360px;
+    margin-bottom: 30px;
+    letter-spacing: 1.56px;
+    line-height: 42px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topic__title {
+    font-size: 44px;
+    min-width: 696px;
+  }
 }
 .topic__button {
   color: #FFFFFF;
@@ -496,6 +605,17 @@ button {
   border-radius: 4px;
   width: 216px;
   height: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .topic__button {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .topic__button {
+    width: 216px;
+  }
 }
 .topic__button:hover {
   color: #2196F3;
@@ -513,6 +633,16 @@ button {
 .about-us__list {
   display: flex;
   gap: 30px;
+}
+@media screen and (min-width: 320px) {
+  .about-us__list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__list {
+    flex-direction: row;
+  }
 }
 .about-us__item::before {
   display: block;

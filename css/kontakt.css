@@ -1,6 +1,15 @@
 body {
   font-family: "Roboto";
-  padding-top: 80px;
+}
+@media screen and (min-width: 320px) {
+  body {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .container {
@@ -11,9 +20,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -84,8 +103,8 @@ button {
   left: 0;
   z-index: 4;
   opacity: 4;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .bottom-line::after {

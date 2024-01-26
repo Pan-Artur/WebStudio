@@ -43,12 +43,10 @@
 %topic-button-position {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     margin-top: 43px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px, 32px, 10px, 32px;
 }
 
 %topic-position {
@@ -79,8 +77,8 @@
     left: 0;
     z-index: 4;
     opacity: 4;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 %bottom-line {

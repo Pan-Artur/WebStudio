@@ -1,16 +1,43 @@
 .topic {  
     @extend %topic-position;
-    height: 600px;
     background-image: radial-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/topic-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media screen and (min-width: 320px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding-top: 200px;
+    }
 
     &__title {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 696px;
         @include text-color-styles($fifth-color, 900, 44px, 1.36);
         letter-spacing: 0.06em;
-        text-transform: uppercase;
+        text-transform: uppercase;                
+
+        @media screen and (min-width: 320px) {
+            font-size: 26px;
+            max-width: 360px;
+            margin-bottom: 30px;
+            letter-spacing: 1.56px;
+            line-height: 42px;               
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            min-width: 696px;
+        }
     }
     
     &__button {
@@ -21,6 +48,15 @@
         @extend %first-transition;
         width: 216px;
         height: 50px;
+        text-align: center;
+
+        @media screen and (min-width: 320px) {
+            width: 200px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 216px;
+        }
 
         &:hover {
             color: $second-color;

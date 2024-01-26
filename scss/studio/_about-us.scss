@@ -5,6 +5,14 @@
     &__list {
         display: flex;
         gap: 30px;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
     }
     
     &__item::before {
