@@ -1,19 +1,25 @@
 .header {
-    @extend %header-position;
     width: 100%;
+    @extend %header-position;
     background: rgba(255, 255, 255, 0.933);
 
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 480px) {
         height: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-right: 10px;
     }
 
     @media screen and (min-width: 768px) {
         height: 80px;
         padding-top: 24px;
         padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 80px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        padding-left: 50px;
     }
 
     &__navigation {
@@ -28,7 +34,7 @@
         @include text-color-styles($second-color, 700, 26px, 1.19);
         @extend %second-transition;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 480px) {
             padding-top: 6px;
         }
 
@@ -88,7 +94,7 @@
         @include size(40px, 40px);
         margin-left: auto;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 480px) {
             display: block;
         }
 
@@ -101,7 +107,7 @@
         @include size(100%, 100%);
         fill: black;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 480px) {
             display: block;
         }
 
@@ -114,7 +120,7 @@
         display: none;
         gap: 50px;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 480px) {
             display: none;
         }
 
@@ -123,7 +129,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            margin-right: auto;
+            margin-right: 190px;
         }
     }
 
@@ -202,7 +208,7 @@
     &__list2 {
         @extend %header-list2-position;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 480px) {
             display: none;
         }
 
@@ -217,7 +223,6 @@
         @media screen and (min-width: 1200px) {
             flex-direction: row;
             gap: 30px;
-            margin-left: auto;
         }
     }
 
@@ -273,7 +278,7 @@
             font-size: 12px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width: 1200px) {
             justify-content: center;
             font-size: 14px;
         }
@@ -318,7 +323,7 @@
     &__line {
         @extend %header-line-styles;
 
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:480px) {
             display: none;
         }
 

@@ -22,17 +22,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -206,7 +206,7 @@ button {
 
 .work__box {
   position: absolute;
-  top: 1433px;
+  top: 1368px;
   padding: 27px 27px;
 }
 
@@ -214,12 +214,11 @@ button {
   width: 100%;
   background: rgba(255, 255, 255, 0.933);
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header {
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -227,6 +226,14 @@ button {
     height: 80px;
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 50px;
   }
 }
 .header__navigation {
@@ -242,7 +249,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__logo {
     padding-top: 6px;
   }
@@ -298,7 +305,7 @@ button {
   height: 40px;
   margin-left: auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__menu {
     display: block;
   }
@@ -313,7 +320,7 @@ button {
   height: 100%;
   fill: black;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__menu-icon {
     display: block;
   }
@@ -327,7 +334,7 @@ button {
   display: none;
   gap: 50px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__list1 {
     display: none;
   }
@@ -339,7 +346,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header__list1 {
-    margin-right: auto;
+    margin-right: 190px;
   }
 }
 .header__link {
@@ -414,7 +421,7 @@ button {
   opacity: 1;
   width: 66px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__list2 {
     display: none;
   }
@@ -432,7 +439,6 @@ button {
   .header__list2 {
     flex-direction: row;
     gap: 30px;
-    margin-left: auto;
   }
 }
 .header__post {
@@ -530,7 +536,7 @@ button {
   height: 12px;
   fill: #2196F3;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .header__line {
     display: none;
   }
@@ -550,8 +556,9 @@ button {
   background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/topic-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .topic {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -579,10 +586,10 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .topic__title {
     font-size: 26px;
-    max-width: 360px;
+    width: 360px;
     margin-bottom: 30px;
     letter-spacing: 1.56px;
     line-height: 42px;
@@ -607,7 +614,7 @@ button {
   height: 50px;
   text-align: center;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .topic__button {
     width: 200px;
   }
@@ -629,6 +636,12 @@ button {
 .about-us {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .about-us {
+    padding-top: 30px;
+  }
 }
 .about-us__list {
   display: flex;
@@ -642,33 +655,116 @@ button {
 @media screen and (min-width: 1200px) {
   .about-us__list {
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
   }
 }
-.about-us__item::before {
+.about-us__box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.about-us__box1-item::before {
   display: block;
   content: "";
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.about-us__item:nth-child(1)::before {
-  background-image: url(../img/antenna.png);
+@media screen and (min-width: 320px) {
+  .about-us__box1-item::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__box1-item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__box1-item::before {
+    width: 270px;
+  }
+}
+.about-us__box1-item:nth-child(1)::before {
+  background-image: url(../../img/antenna.png);
   background-size: 70px;
 }
-.about-us__item:nth-child(2)::before {
-  background-image: url(../img/clock.png);
+.about-us__box1-item:nth-child(2)::before {
+  background-image: url(../../img/clock.png);
   background-size: 70px;
 }
-.about-us__item:nth-child(3)::before {
-  background-image: url(../img/diagram.png);
+@media screen and (min-width: 480px) {
+  .about-us__box1 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__box1 {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__box1 {
+    flex-direction: row;
+  }
+}
+.about-us__box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.about-us__box2-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #F5F4FA;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 320px) {
+  .about-us__box2-item::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__box2-item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__box2-item::before {
+    width: 270px;
+  }
+}
+.about-us__box2-item:nth-child(1)::before {
+  background-image: url(../../img/diagram.png);
   background-size: 70px;
 }
-.about-us__item:nth-child(4)::before {
-  background-image: url(../img/astronaut.png);
+.about-us__box2-item:nth-child(2)::before {
+  background-image: url(../../img/astronaut.png);
   background-size: 70px;
+}
+@media screen and (min-width: 480px) {
+  .about-us__box2 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__box2 {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__box2 {
+    flex-direction: row;
+  }
 }
 .about-us__title {
   margin-bottom: 10px;
@@ -678,16 +774,60 @@ button {
   font-size: 14px;
   line-height: normal;
 }
+@media screen and (min-width: 320px) {
+  .about-us__title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__title {
+    text-align: left;
+  }
+}
 .about-us__text {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  width: 270px;
+}
+@media screen and (min-width: 320px) {
+  .about-us__text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 590px) {
+  .about-us__text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__text {
+    text-align: left;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__text {
+    width: 270px;
+  }
 }
 
 .work {
   padding-bottom: 94px;
+}
+@media screen and (min-width: 320px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__list {
   display: flex;
@@ -733,8 +873,51 @@ button {
 }
 .team__list {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 320px) {
+  .team__list {
+    flex-direction: column;
+  }
+}
+.team__box1 {
+  gap: 30px;
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  .team__box1 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__box1 {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__box1 {
+    flex-direction: row;
+  }
+}
+.team__box2 {
+  gap: 30px;
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  .team__box2 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__box2 {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__box2 {
+    flex-direction: row;
+  }
 }
 .team__item {
   display: flex;

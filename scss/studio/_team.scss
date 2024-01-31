@@ -4,9 +4,48 @@
 
     &__list {
         display: flex;
-        column-gap: 30px;
+        justify-content: center;
+        gap: 30px;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
     }
     
+    &__box1 {
+        gap: 30px;
+        display: flex;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
+    &__box2 {
+        gap: 30px;
+        display: flex;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
