@@ -1,10 +1,29 @@
 .header {
+    width: 100%;
     @extend %header-position;
-    @include size (100%, 80px);
     background: rgba(255, 255, 255, 0.933);
+
+    @media screen and (min-width: 320px) {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 80px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
     &__navigation {
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
@@ -13,6 +32,21 @@
         font-family: $second-font;
         @include text-color-styles($second-color, 700, 26px, 1.19);
         @extend %second-transition;
+
+        @media screen and (min-width: 320px) {
+            padding-top: 6px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin-right: 88px;
+            width: 134px;
+            font-size: 24px;
+            padding-top: 0;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
     
         &:hover {
             color: $third-color;
@@ -37,6 +71,11 @@
         font-family: $second-font;
         @include text-color-styles($third-color, 700, 26px, 1.38);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            width: 134px;
+            font-size: 24px;
+        }
     
         &:hover {
             color: $second-color;
@@ -48,14 +87,52 @@
         }
     }
 
+    &__menu {
+        display: none;
+        content: '';
+        @include size(40px, 40px);
+        margin-left: auto;
+
+        @media screen and (min-width: 320px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu-icon {
+        @include size(40px, 40px);
+        fill: black;
+
+        @media screen and (min-width: 320px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &__list1 {
         display: flex;
         gap: 50px;
-        width: 286px;
+
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 190px;
+        }
     }
 
     &__link {
-        align-items: center;
         @include text-color-styles($main-color);
         @extend %second-transition;
 
@@ -80,11 +157,20 @@
         border-radius: 2px;
         background-color: $second-color;
         @extend %seventh-transition;
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+            top: 25px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            position: relative;
+            top: 28px;
+        }
     }
 
     .bottom-line1::after {
-        opacity: 1;
-        width: 0px;
+        @include opacity-width(1, 0px);
         @extend %seventh-transition;
     }
 
@@ -105,32 +191,52 @@
     }
 
     .bottom-line3::after {
-        opacity: 1;
-        width: 0px;
+        @include opacity-width(1, 0px);
         @extend %seventh-transition;
     }
 
     .bottom-line3:hover::after {
-        opacity: 1;
-        width: 67px;
+        @include opacity-width(1, 66px);
     }
 
     .bottom-line3:focus::after {
-        opacity: 1;
-        width: 67px;
+        @include opacity-width(1, 66px);
         @extend %seventh-transition;
     }
 
     &__list2 {
-        display: flex;
-        gap: 50px;
-        margin-left: auto;
+        @extend %header-list2-position;
+        
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            gap: 12px;
+            margin-right: 15px;
+            margin-left: 96px;
+            display: flex;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+        }
     }
 
     &__post {
         @extend %header-post-position;
         @include text-color-styles($sixth-color);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
     
         &:hover {
             @include text-color-styles();
@@ -158,36 +264,21 @@
             &:hover {
                 fill: $second-color;
             }
-
-            &:focus {
-                fill: $second-color;
-                @extend %fourth-transition;
-            }
         }
     }
 
     &__phone {
         display: flex;
-        justify-content: center;
         @include text-color-styles($sixth-color, 500, 14px, 1.14);
         @extend %second-transition;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
     
-        &-icon {
-            margin-right: 8px;
-            @include size (10px, 16px);
-            fill: $sixth-color;
-            @extend %fourth-transition;
-    
-            &:hover {
-                @include size (10px, 16px);
-                fill: $second-color;
-            }
-    
-            &:focus {
-                @include size (10px, 16px);
-                fill: $second-color;
-                @extend %fourth-transition;
-            }
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            font-size: 14px;
         }
 
         &:hover {
@@ -199,17 +290,49 @@
             @extend %second-transition;
         }
 
-        &:hover .header__phone-icon {
+        &:hover &-icon {
             fill: $second-color;
         }
 
-        &:focus .header__phone-icon {
+        &:focus &-icon {
             fill: $second-color;
+            @extend %second-transition;
+        }
+    }
+
+    &__phone-icon {
+        margin-right: 8px;
+        @include size (10px, 16px);
+        fill: $sixth-color;
+        @extend %fourth-transition;
+
+        &__phone-icon:hover {
+            @include size (10px, 16px);
+            fill: $second-color;
+        }
+
+        &__phone-icon:focus {
+            @include size (10px, 16px);
+            fill: $second-color;
+            @extend %fourth-transition;
         }
     }
 
     &__line {
         @extend %header-line-styles;
+
+        @media screen and (min-width:320px) {
+            display: block;
+            
+        }
+    
+        @media screen and (min-width:768px) {
+            margin-top: 14px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            margin-top: 20px;
+        }
     }
 }
 

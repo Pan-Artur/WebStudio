@@ -1,12 +1,13 @@
 .header {
-    width: 100%;
+    min-width: 100vw;
     @extend %header-position;
     background: rgba(255, 255, 255, 0.933);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         height: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
+        min-width: 101vw;
     }
 
     @media screen and (min-width: 768px) {
@@ -15,17 +16,12 @@
         padding-bottom: 25px;
     }
 
-    @media screen and (min-width: 1200px) {
-        height: 80px;
-        padding-top: 24px;
-        padding-bottom: 25px;
-        padding-left: 50px;
-    }
-
     &__navigation {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__logo {   
@@ -34,7 +30,7 @@
         @include text-color-styles($second-color, 700, 26px, 1.19);
         @extend %second-transition;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             padding-top: 6px;
         }
 
@@ -58,11 +54,11 @@
             @extend %second-transition;
         }
 
-        &logo:hover .logo {
+        &:hover .header__logo2 {
             color: $second-color;
         }
 
-        &logo:focus .logo {
+        &:focus .header__logo2 {
             color: $second-color;
             @extend %second-transition;
         }
@@ -89,12 +85,11 @@
     }
 
     &__menu {
-        display: none;
         content: '';
         @include size(40px, 40px);
         margin-left: auto;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             display: block;
         }
 
@@ -107,7 +102,7 @@
         @include size(100%, 100%);
         fill: black;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             display: block;
         }
 
@@ -120,7 +115,7 @@
         display: none;
         gap: 50px;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             display: none;
         }
 
@@ -208,7 +203,7 @@
     &__list2 {
         @extend %header-list2-position;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             display: none;
         }
 
@@ -323,7 +318,7 @@
     &__line {
         @extend %header-line-styles;
 
-        @media screen and (min-width:480px) {
+        @media screen and (min-width:320px) {
             display: none;
         }
 

@@ -18,6 +18,11 @@
         <div class="container">
             <nav class="header__navigation">
                 <a href="./index.html" class="header__logo">Web<span class="header__logo2">Studio</span></a>
+                <a class="header__menu" href="#">
+                    <svg class="header__menu-icon">
+                        <use href="./img/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </a>
                 <ul class="header__list1">
                     <li class="header__item">
                         <a class="bottom-line header__link bottom-line1 studio-link" href="./index.html" target="_blank" rel="noopener noreferrer">Студія</a>
@@ -55,7 +60,7 @@
     <main class="main">
         <!-- Tabs -->
         <section class="tabs">
-            <div class="container">
+            <div class="container tabs__container">
                 <ul class="tabs__list">
                     <li data-aos="fade-down" data-aos-duration="1500" class="tabs__item">
                         <button class="tabs__button tabs__button1" type="button">Усі</button>
@@ -210,66 +215,71 @@
         </section>
     </main>
     <!-- Footer -->
+    <!-- Footer -->
     <footer data-aos="fade-up" data-aos-duration="1500" class="footer">
         <div class="container footer__container">
-            <div data-aos="fade-up" data-aos-duration="1000" class="footer__info">
-                <a href="./index.html" class="footer__logo">Web<span class="footer__logo2">Studio</span></a>
-                <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__post" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__phone" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div data-aos="fade-down" data-aos-duration="1000" class="footer__contacts">
-                <h3 class="footer__title">
-                    Приєднуйтесь
-                </h3>
-                <ul class="footer__icons">
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__box">
+                <div data-aos="fade-up" data-aos-duration="1000" class="footer__info">
+                    <a href="./index.html" class="footer__logo">Web<span class="footer__logo2">Studio</span></a>
+                    <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__post" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__telephone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1000" class="footer__contacts">
+                    <h3 class="footer__title">
+                        Приєднуйтесь
+                    </h3>
+                    <ul class="footer__icons">
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form data-aos="fade-up" data-aos-duration="1000" class="subscribe">
                 <h3 class="subscribe-title">
                     Підпишіться на розсилку
                 </h3>
-                <input required class="subscribe-input" type="text" placeholder="E-mail">
-                <button type="submit" class="subscribe-button">Підписатися</button>
-                <a class="subscribe-link" href="#">
-                    <svg class="subscribe-icon">
-                        <use href="./img/symbol-defs.svg#icon-send"></use>
-                    </svg>
-                </a>
+                <div class="subscribe-box">
+                    <input required class="subscribe-input" type="text" placeholder="E-mail">
+                    <button type="submit" class="subscribe-button">Підписатися</button>
+                    <a class="subscribe-link" href="#">
+                        <svg class="subscribe-icon">
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </a>
+                </div>
             </form>
         </div>
     </footer>

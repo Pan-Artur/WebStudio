@@ -2,9 +2,76 @@
     @extend %footer-position;
     background: $seventh-color;
 
+    @media screen and (min-width: 320px) {
+        height: 603px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        height: 463px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+    }
+
     &__container {
         display: flex;
-        gap: 70px;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 93px;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+
+    &__box {
+        display: flex;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 165px;
+            justify-content: center;
+            margin-bottom: 66px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 70px;
+            width: 507px;
+        }
+    }
+
+    &__info {
+        @media screen and (min-width: 320px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__logo {
@@ -19,7 +86,7 @@
 
     &__address {
         margin-top: 20px;
-        @include text-color-styles($fifth-color, 400, 14px, 1.71);
+        @include text-color-styles($fifth-color, 400, 1.71);
         font-style: normal;
     }
 
@@ -44,12 +111,29 @@
         }
     }
 
+    &__contacts {
+        @media screen and (min-width: 320px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    }
+
     &__post {
         @include text-color-styles($sixth-color, 400, 1.71);
     }
 
-    &__phone {
+    &__telephone {
         @include text-color-styles($sixth-color, 1.71);
+
     }
 
     &__contacts {
@@ -66,6 +150,10 @@
     &__icons {
         display: flex;
         gap: 10px;
+
+        @media screen and (min-width: 320px) {
+            justify-content: center;
+        }
     }
 
     &__icon {
@@ -74,21 +162,92 @@
     }
 
     .subscribe {
-        padding-top: 12px;
+        @media screen and (min-width: 320px) {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 290px;
+        }
+
+        @media screen and (min-width: 480px) {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+            width: 580px;
+            height: 56px;
+            margin: 0;
+        }
 
         &-title {
             margin-bottom: 20px;
-            @include text-color-styles($fifth-color, 700, normal);
+            @include text-color-styles($fifth-color, 700, 14px);
             letter-spacing: 0.42px;
             text-transform: uppercase;
+
+            @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+        }
+
+        &-box {
+            display: flex;
+
+            @media screen and (min-width: 320px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-direction: row;
+            }
         }
 
         &-input {
             @extend %footer-input-position;
             @include size (358px, 50px);
+            @include BBB(rgba(33, 150, 243, 0.00), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
             border: 1px solid rgba(255, 255, 255, 0.30);
-            @include BBB (rgba(33, 150, 243, 0.00), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
             @extend %fifth-transition;
+
+            @media screen and (min-width: 320px) {
+                width: 290px;
+            }
+
+            @media screen and (min-width: 480px) {
+                width: 450px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 450px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 358px;
+            }
 
             &:hover {
                 border: 1px solid $second-color;
@@ -112,8 +271,23 @@
             @include size (200px, 50px);
             @include text-color-styles($fifth-color, 700, 16px, 1.87);
             letter-spacing: 0.96px;
-            @include BBB ($second-color, 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
+            @include BBB($second-color, 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
             @extend %first-transition;
+
+            @media screen and (min-width: 320px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-left: 125px;
+                margin-right: 125px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             &:hover {
                 color: $second-color;
@@ -129,9 +303,24 @@
 
         &-icon {
             position: relative;
-            right: 57px;
-            top: 7px;
+            right: 0;
+            top: 0;
             @include size (24px, 24px);
+
+            @media screen and (min-width: 320px) {
+                left: 58px;
+                top: -56px;
+            }
+
+            @media screen and (min-width: 768px) {
+                left: 58px;
+                top: -56px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                left: -70px;
+                top: 14px;
+            }
 
             &:hover .subscribe-button {
                 fill: $main-color;

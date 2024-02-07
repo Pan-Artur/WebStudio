@@ -13,6 +13,22 @@
         text-align: center;
         justify-content: center;
         gap: 30px;
+
+        @media screen and (min-width: 320px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            width: 1170px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     
     &__item {
@@ -20,6 +36,25 @@
         border: 1px solid $fourth-color;
         border-radius: 4px;
         @extend %fifth-transition;
+
+        @media screen and (min-width: 320px) {
+            padding-top: 16px;
+            @include size (210px, 92px);
+            flex-basis: calc((100% - 30px) / 2);
+
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-top: 16px;
+            @include size (226px, 92px);
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include size (170px, 92px);
+            flex-basis: calc((100% - 150px) / 6);
+            width: 170px;
+        }
 
         &:hover {
             @include size (170px, 92px);
@@ -45,16 +80,34 @@
     }
     
     &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include size (100%, 100%);
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include size (160px, 60px);
+        }
     }
     
     &__icon {
         @include size (106px, 60px);
         fill: $fourth-color;
         @extend %fourth-transition;
+        margin-left: auto;
+
+
+        @media screen and (min-width: 768px) {
+            @include size (160px, 60px);
+            margin-left: auto;
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include size (106px, 60px);
+            align-items: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     
         &:hover svg {
             fill: $second-color;

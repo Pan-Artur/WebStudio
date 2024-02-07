@@ -115,6 +115,12 @@ button {
   font-family: "Roboto";
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    height: 1024px;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -139,9 +145,47 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 290px;
+    height: 650px;
+    top: 45%;
+    left: 40%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    top: 45%;
+    left: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 40%;
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 40%;
+    left: 50%;
+  }
+}
 .modal__close-link-box {
   padding-left: 490px;
   margin-bottom: 2px;
+}
+@media screen and (min-width: 320px) {
+  .modal__close-link-box {
+    padding-left: 250px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__close-link-box {
+    padding-left: 407px;
+  }
 }
 .modal__circle {
   padding: 6px;
@@ -234,6 +278,16 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
 }
+@media screen and (min-width: 320px) {
+  .modal__form-comment-input {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__form-comment-input {
+    width: 370px;
+  }
+}
 .modal__form-comment-input:hover, .modal__form-comment-input:focus, .modal__form-comment-input:active {
   border: 1px solid #2196F3;
 }
@@ -269,6 +323,16 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
 }
+@media screen and (min-width: 320px) {
+  .modal__form-input {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__form-input {
+    width: 370px;
+  }
+}
 .modal__form-input:hover, .modal__form-input:focus {
   border: 1px solid #2196F3;
 }
@@ -293,7 +357,7 @@ button {
   fill: #212121;
 }
 .modal__conditions-checkbox:hover, .modal__conditions-checkbox:focus {
-  fill: #2196F3;
+  border: 1px solid #2196F3;
   stroke: #FFFFFF;
 }
 .modal__conditions-text {
@@ -302,6 +366,11 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (min-width: 320px) {
+  .modal__conditions-text {
+    font-size: 12px;
+  }
 }
 .modal__conditions-link {
   padding-left: 2px;

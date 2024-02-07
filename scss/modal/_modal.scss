@@ -4,6 +4,10 @@
 
 .backdrop {
     @extend %backdrop-styles;
+
+    @media screen and (min-width: 768px) {
+        height: 1024px;
+    }
 }
 
 .backdrop.is-hidden {
@@ -15,7 +19,6 @@
 .backdrop.is-hidden {
     transform: translate(-50%, -50%) scale(0);
 }
-   
 
 .no-scroll {
     overflow: hidden;
@@ -30,9 +33,41 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)  250ms;
     padding-bottom: 40px;
 
+    @media screen and (min-width: 320px) {
+        width: 290px;
+        height: 650px;
+        top: 45%;
+        left: 40%;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+        top: 45%;
+        left: 45%;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 40%;
+        left: 47%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 40%;
+        left: 50%;
+    }
+
     &__close-link-box {
         padding-left: 490px;
         margin-bottom: 2px;
+
+        @media screen and (min-width: 320px) {
+            padding-left: 250px;
+        }
+
+        @media screen and (min-width: 480px) {
+            padding-left: 407px;
+        }
     }
     
     &__circle {
@@ -126,6 +161,14 @@
                 border: 1px solid rgba(33, 33, 33, 0.20);
                 outline: none;
                 @extend %fifth-transition;
+
+                @media screen and (min-width: 320px) {
+                    width: 210px;
+                }
+
+                @media screen and (min-width: 480px) {
+                    width: 370px;
+                }
             
                 &:hover,
                 &:focus,
@@ -149,7 +192,6 @@
             &:hover,
             &:focus {
                 @include size (18px, 18px);
-
                 fill: $second-color;
             }
         }
@@ -161,6 +203,14 @@
             border: 1px solid rgba(33, 33, 33, 0.20);
             outline: none;
             @extend %fifth-transition;
+
+            @media screen and (min-width: 320px) {
+                width: 210px;
+            }
+
+            @media screen and (min-width: 480px) {
+                width: 370px;
+            }
         
             &:hover,
             &:focus {
@@ -193,7 +243,7 @@
 
             &:hover,
             &:focus {
-                fill: $second-color;
+                border: 1px solid $second-color;
                 stroke: $fifth-color;
             }
         }
@@ -201,6 +251,10 @@
         &-text {
             margin-left: 7px;
             @include text-color-styles($sixth-color, 400, 14px, 1.71);
+
+            @media screen and (min-width: 320px) {
+                font-size: 12px;
+            }
         }
         
         &-link {

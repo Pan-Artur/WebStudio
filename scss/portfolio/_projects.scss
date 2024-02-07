@@ -1,19 +1,64 @@
 .projects {
     padding-bottom: 94px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px
+        gap: 30px;
+
+        @media screen and (min-width: 320px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 320px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__item {
         padding-bottom: 20px;
         @include size (370px, 404px);
-        flex-basis: calc((100% - 60px) / 3);
-        border: 1px solid $fifth-color;
+        border: 1px solid $ninth-color;
         overflow: hidden;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
 
         &:hover {
             position: relative;
@@ -31,9 +76,19 @@
         }
     }
 
+    &__item:nth-child(9) {
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+        }
+    }
+
     &__box {
         overflow: hidden;
         transform: translateY(0%);
+    }
+
+    &__link {
+        @include size (370px, 404px);
     }
 
     &__overlay {
@@ -48,6 +103,25 @@
         @include text-color-styles($fifth-color, 400, 18px, 1.55);
         letter-spacing: 0.54px;
         background: rgba(33, 150, 243, 0.90);
+
+        @media screen and (min-width: 320px) {
+            width: 290px;
+            height: 294px;
+            padding: 77px 22px;
+        }
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            padding: 49px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
     }
 
     &__title {
@@ -59,6 +133,10 @@
         margin-left: 24px;
         margin-right: 24px;
         @include text-color-styles($sixth-color, 400, 16px, 1.87);
+    }
+
+    &__photo {
+        height: 294px;
     }
 }
 

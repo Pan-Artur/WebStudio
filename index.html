@@ -16,7 +16,7 @@
 <body class="body">
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="header__navigation">
                 <a href="./index.html" class="header__logo">Web<span class="header__logo2">Studio</span></a>
                 <a class="header__menu" href="#">
@@ -159,7 +159,7 @@
                 <ul class="team__list">
                     <div class="team__box1">
                         <li data-aos="flip-right"
-                            data-aos-duration="2000" class="team__item">
+                            data-aos-duration="2000" class="team__item team__box1-item">
                             <img class="team__photo" src="./img/igor.jpg" width="500" alt="1 працівник">
                             <h2 class="team__name-title">Ігор Дем'яненко</h2>
                             <p class="team__profession">Product Designer</p>
@@ -194,7 +194,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item">
+                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item team__box1-item">
                             <img class="team__photo" src="./img/olga.jpg" width="500" alt="2 працівник">
                             <h2 class="team__name-title">Ольга Рєпіна</h2>
                             <p class="team__profession">Frontend Developer</p>
@@ -231,7 +231,7 @@
                         </li>
                     </div>
                     <div class="team__box2">
-                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item">
+                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item team__box2-item">
                             <img class="team__photo" src="./img/mykola.jpg" width="500" alt="3 працівник">
                             <h2 class="team__name-title">Микола Тарасов</h2>
                             <p class="team__profession">Marketing</p>
@@ -266,7 +266,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item">
+                        <li data-aos="flip-right" data-aos-duration="2000" class="team__item team__box2-item">
                             <img class="team__photo" src="./img/mihail.jpg" width="500" alt="4 працівник">
                             <h2 class="team__name-title">Михайло Єрмаков</h2>
                             <p class="team__profession">UI Designer</p>
@@ -306,7 +306,7 @@
             </div>
         </section>
         <!-- Most Clients  -->
-        <!-- <section class="most-clients">
+        <section class="most-clients">
         <div class="container">
             <h2 data-aos="fade-up" data-aos-duration="1500" class="most-clients__title">
                 Постійні клієнти
@@ -357,73 +357,77 @@
             </ul>
         </div>
         </section>
-    </main> -->
+    </main>
     <!-- Footer -->
-    <!-- <footer data-aos="fade-up" data-aos-duration="1500" class="footer">
+    <footer data-aos="fade-up" data-aos-duration="1500" class="footer">
         <div class="container footer__container">
-            <div data-aos="fade-up" data-aos-duration="1000" class="footer__info">
-                <a href="./index.html" class="footer__logo">Web<span class="footer__logo2">Studio</span></a>
-                <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__post" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__telephone" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div data-aos="fade-down" data-aos-duration="1000" class="footer__contacts">
-                <h3 class="footer__title">
-                    Приєднуйтесь
-                </h3>
-                <ul class="footer__icons">
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__item-icons">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__icon">
-                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__box">
+                <div data-aos="fade-up" data-aos-duration="1000" class="footer__info">
+                    <a href="./index.html" class="footer__logo">Web<span class="footer__logo2">Studio</span></a>
+                    <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__post" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__telephone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1000" class="footer__contacts">
+                    <h3 class="footer__title">
+                        Приєднуйтесь
+                    </h3>
+                    <ul class="footer__icons">
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item-icons">
+                            <a class="footer__link" href="#">
+                                <svg class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form data-aos="fade-up" data-aos-duration="1000" class="subscribe">
                 <h3 class="subscribe-title">
                     Підпишіться на розсилку
                 </h3>
-                <input required class="subscribe-input" type="text" placeholder="E-mail">
-                <button type="submit" class="subscribe-button">Підписатися</button>
-                <a class="subscribe-link" href="#">
-                    <svg class="subscribe-icon">
-                        <use href="./img/symbol-defs.svg#icon-send"></use>
-                    </svg>
-                </a>
+                <div class="subscribe-box">
+                    <input required class="subscribe-input" type="text" placeholder="E-mail">
+                    <button type="submit" class="subscribe-button">Підписатися</button>
+                    <a class="subscribe-link" href="#">
+                        <svg class="subscribe-icon">
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </a>
+                </div>
             </form>
         </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <div data-modal-close class="modal__close-link-box">
                 <div class="modal__circle">
@@ -476,7 +480,7 @@
                 <button class="modal__button" type="submit">Відправити</button>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
