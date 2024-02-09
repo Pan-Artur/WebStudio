@@ -1,14 +1,10 @@
 .header {
-    min-width: 100vw;
+    width: 100vw;
     @extend %header-position;
     background: rgba(255, 255, 255, 0.933);
-
-    @media screen and (min-width: 320px) {
-        height: 60px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        min-width: 101vw;
-    }
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @media screen and (min-width: 768px) {
         height: 80px;
@@ -25,23 +21,19 @@
     }
 
     &__logo {   
-        margin-right: 93px;
         font-family: $second-font;
-        @include text-color-styles($second-color, 700, 26px, 1.19);
+        padding-top: 6px;
         @extend %second-transition;
-
-        @media screen and (min-width: 320px) {
-            padding-top: 6px;
-        }
+        @include text-color-styles($second-color, 700, 24px, 1.19);
 
         @media screen and (min-width: 768px) {
             margin-right: 88px;
             width: 134px;
-            font-size: 24px;
             padding-top: 0;
         }
 
         @media screen and (min-width: 1200px) {
+            margin-right: 93px;
             font-size: 26px;
         }
     
@@ -66,12 +58,15 @@
 
     &__logo2 {
         font-family: $second-font;
-        @include text-color-styles($third-color, 700, 26px, 1.38);
+        @include text-color-styles($third-color, 700, 24px, 1.38);
         @extend %second-transition;
 
         @media screen and (min-width: 768px) {
             width: 134px;
-            font-size: 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
         }
     
         &:hover {
@@ -88,10 +83,7 @@
         content: '';
         @include size(40px, 40px);
         margin-left: auto;
-
-        @media screen and (min-width: 320px) {
-            display: block;
-        }
+        display: block;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -101,10 +93,7 @@
     &__menu-icon {
         @include size(100%, 100%);
         fill: black;
-
-        @media screen and (min-width: 320px) {
-            display: block;
-        }
+        display: block;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -113,14 +102,10 @@
 
     &__list1 {
         display: none;
-        gap: 50px;
-
-        @media screen and (min-width: 320px) {
-            display: none;
-        }
 
         @media screen and (min-width: 768px) {
             display: flex;
+            gap: 50px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -201,11 +186,7 @@
     }
 
     &__list2 {
-        @extend %header-list2-position;
-
-        @media screen and (min-width: 320px) {
-            display: none;
-        }
+        display: none;
 
         @media screen and (min-width: 768px) {
             flex-direction: column;
@@ -317,13 +298,11 @@
 
     &__line {
         @extend %header-line-styles;
-
-        @media screen and (min-width:320px) {
-            display: none;
-        }
+        display: none;
 
         @media screen and (min-width:768px) {
             margin-top: 14px;
+            display: block;
         }
 
         @media screen and (min-width:1200px) {

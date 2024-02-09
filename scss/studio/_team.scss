@@ -5,11 +5,7 @@
     &__title {
         text-align: center;
         margin-bottom: 50px;
-        @include text-color-styles($main-color, 700, 36px, 1.17);
-    
-        @media screen and (min-width: 320px) {
-            font-size: 28px;
-        }
+        @include text-color-styles($main-color, 700, 28px, 1.17);
 
         @media screen and (min-width: 1200px) {
             font-size: 36px;
@@ -21,11 +17,8 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        flex-direction: column;
         gap: 30px;
-
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-        }
 
         @media screen and (min-width: 1200px) {
             flex-direction: row;
@@ -35,10 +28,7 @@
     &__box1 {
         gap: 30px;
         display: flex;
-
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-        }
+        flex-direction: column;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
@@ -47,7 +37,6 @@
         }
 
         @media screen and (min-width: 1200px) {
-            flex-direction: row;
             margin: 0;
         }
     }
@@ -55,10 +44,7 @@
     &__box2 {
         gap: 30px;
         display: flex;
-
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-        }
+        flex-direction: column;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
@@ -67,7 +53,6 @@
         }
 
         @media screen and (min-width: 1200px) {
-            flex-direction: row;
             margin: 0;
         }
     }
@@ -76,15 +61,11 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        @include size(270px, 428px);
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 9px;
+        @include size(290px, 480px);
         @include BBB($fifth-color, $main-box-shadow, 0px 0px 4px 4px);
-
-        @media screen and (min-width: 320px) {
-            @include size(290px, 480px);
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 9px;
-        }
 
         @media screen and (min-width: 768px) {
             @include size(354px, 536px);
@@ -123,11 +104,7 @@
     
     &__photo {
         @extend %team-photo-position;
-        @include size (270px, 260px);
-
-        @media screen and (min-width: 320px) {
-            @include size(290px, 310px);
-        }
+        @include size(290px, 310px);
 
         @media screen and (min-width: 480px) {
             @include size(450px, 320px);
