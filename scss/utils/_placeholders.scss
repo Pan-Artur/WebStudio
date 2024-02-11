@@ -44,7 +44,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 43px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,8 +60,6 @@
 %team-position {
     left: 0px;
     top: 1446px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 %team-photo-position {
@@ -104,7 +101,6 @@
     left: 0px;
     top: 2094px;
     padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
 }
 
@@ -146,7 +142,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 8px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 %modal-button-position {
@@ -168,7 +164,7 @@
 
 %work-box-position {
     position: absolute;
-    top: 1368px;
+    top: 1432px;
     padding: 27px 27px;
 }
 

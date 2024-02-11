@@ -1,11 +1,21 @@
 .most-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         text-align: center;
-        margin-bottom: 50px;
-        @include text-color-styles($main-color, 700, 36px, 1.17);
+        margin-bottom: 30px;
+        @include text-color-styles($main-color, 700, 28px, 1.17);
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
     }
     
     &__list {

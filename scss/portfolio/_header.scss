@@ -2,20 +2,11 @@
     width: 100%;
     @extend %header-position;
     background: rgba(255, 255, 255, 0.933);
-
-    @media screen and (min-width: 320px) {
-        height: 60px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @media screen and (min-width: 768px) {
-        height: 80px;
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }
-
-    @media screen and (min-width: 1200px) {
         height: 80px;
         padding-top: 24px;
         padding-bottom: 25px;
@@ -25,26 +16,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__logo {
-        margin-right: 93px;
         font-family: $second-font;
-        @include text-color-styles($second-color, 700, 26px, 1.19);
+        padding-top: 6px;
+        @include text-color-styles($second-color, 700, 24px, 1.19);
         @extend %second-transition;
-
-        @media screen and (min-width: 320px) {
-            padding-top: 6px;
-        }
     
         @media screen and (min-width: 768px) {
             margin-right: 88px;
             width: 134px;
-            font-size: 24px;
             padding-top: 0;
         }
     
         @media screen and (min-width: 1200px) {
+            margin-right: 93px;
             font-size: 26px;
         }
     
@@ -69,12 +58,15 @@
 
     &__logo2 {
         font-family: $second-font;
-        @include text-color-styles($third-color, 700, 26px, 1.38);
+        @include text-color-styles($third-color, 700, 24px, 1.38);
         @extend %second-transition;
 
         @media screen and (min-width: 768px) {
             width: 134px;
-            font-size: 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
         }
     
         &:hover {
@@ -88,14 +80,10 @@
     }
 
     &__menu {
-        display: none;
+        display: block;
         content: '';
         @include size(40px, 40px);
         margin-left: auto;
-
-        @media screen and (min-width: 320px) {
-            display: block;
-        }
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -103,12 +91,9 @@
     }
 
     &__menu-icon {
-        @include size(40px, 40px);
+        display: block;
+        @include size(100%, 100%);
         fill: black;
-
-        @media screen and (min-width: 320px) {
-            display: block;
-        }
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -116,15 +101,11 @@
     }
 
     &__list1 {
-        display: flex;
-        gap: 50px;
-
-        @media screen and (min-width: 320px) {
-            display: none;
-        }
+        display: none;
     
         @media screen and (min-width: 768px) {
             display: flex;
+            gap: 50px;
         }
     
         @media screen and (min-width: 1200px) {
@@ -147,13 +128,12 @@
     }
 
     .portfolio-link {
-        width: 60px;
         @include text-color-styles();
     }
 
     .bottom-line::after {
         @extend %bottom-line;
-        @include size (48px, 4px);
+        @include size (100%, 4px);
         border-radius: 2px;
         background-color: $second-color;
         @extend %seventh-transition;
@@ -175,18 +155,16 @@
     }
 
     .bottom-line1:hover::after {
-        opacity: 1;
-        width: 44px;
+        @include opacity-width(1, 100%);
     }
 
     .bottom-line1:focus::after {
-        opacity: 1;
-        width: 44px;
+        @include opacity-width(1, 100%);
         @extend %seventh-transition;
     }
 
     .bottom-line2::after {
-        width: 70px;
+        @include opacity-width(1, 100%);
         background-color: $second-color;
     }
 
@@ -196,20 +174,16 @@
     }
 
     .bottom-line3:hover::after {
-        @include opacity-width(1, 66px);
+        @include opacity-width(1, 100%);
     }
 
     .bottom-line3:focus::after {
-        @include opacity-width(1, 66px);
+        @include opacity-width(1, 100%);
         @extend %seventh-transition;
     }
 
     &__list2 {
         display: none;
-        
-        @media screen and (min-width: 320px) {
-            display: none;
-        }
     
         @media screen and (min-width: 768px) {
             flex-direction: column;
@@ -240,11 +214,27 @@
     
         &:hover {
             @include text-color-styles();
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
     
         &:focus {
             @include text-color-styles();
             @extend %second-transition;
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
 
         &:hover .header__post-icon {
@@ -283,11 +273,27 @@
 
         &:hover {
             @include text-color-styles();
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
 
         &:focus {
             @include text-color-styles();
             @extend %second-transition;
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
 
         &:hover &-icon {
@@ -320,11 +326,6 @@
 
     &__line {
         @extend %header-line-styles;
-
-        @media screen and (min-width:320px) {
-            display: block;
-            
-        }
     
         @media screen and (min-width:768px) {
             margin-top: 14px;

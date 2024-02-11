@@ -1,10 +1,7 @@
 .footer {
     @extend %footer-position;
     background: $seventh-color;
-
-    @media screen and (min-width: 320px) {
-        height: 603px;
-    }
+    height: 608px;
 
     @media screen and (min-width: 768px) {
         flex-direction: column;
@@ -17,14 +14,7 @@
 
     &__container {
         display: flex;
-
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-        }
-
-        @media screen and (min-width: 768px) {
-            flex-direction: column;
-        }
+        flex-direction: column;
 
         @media screen and (min-width: 1200px) {
             gap: 93px;
@@ -37,12 +27,9 @@
 
     &__box {
         display: flex;
-
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-            gap: 60px;
-            margin-bottom: 60px;
-        }
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
@@ -52,21 +39,19 @@
         }
 
         @media screen and (min-width: 1200px) {
-            flex-direction: row;
             gap: 70px;
             width: 507px;
         }
     }
 
     &__info {
-        @media screen and (min-width: 320px) {
-            text-align: center;
-            align-items: center;
-        }
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
 
         @media screen and (min-width: 768px) {
-            text-align: center;
-            align-items: center;
+            margin: 0;
         }
 
         @media screen and (min-width: 1200px) {
@@ -88,6 +73,7 @@
         margin-top: 20px;
         @include text-color-styles($fifth-color, 400, 1.71);
         font-style: normal;
+        width: 230px;
     }
 
     &__item {
@@ -112,15 +98,8 @@
     }
 
     &__contacts {
-        @media screen and (min-width: 320px) {
-            text-align: center;
-            align-items: center;
-        }
-
-        @media screen and (min-width: 768px) {
-            text-align: center;
-            align-items: center;
-        }
+        text-align: center;
+        align-items: center;
 
         @media screen and (min-width: 1200px) {
             text-align: left;
@@ -149,11 +128,8 @@
 
     &__icons {
         display: flex;
+        justify-content: center;
         gap: 10px;
-
-        @media screen and (min-width: 320px) {
-            justify-content: center;
-        }
     }
 
     &__icon {
@@ -162,30 +138,14 @@
     }
 
     .subscribe {
-        @media screen and (min-width: 320px) {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            width: 290px;
-        }
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
 
         @media screen and (min-width: 480px) {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            width: 450px;
-        }
-
-        @media screen and (min-width: 768px) {
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
             width: 450px;
         }
 
@@ -193,7 +153,7 @@
             padding-top: 12px;
             width: 580px;
             height: 56px;
-            margin: 0;
+            margin-right: auto;
         }
 
         &-title {
@@ -209,15 +169,7 @@
 
         &-box {
             display: flex;
-
-            @media screen and (min-width: 320px) {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            @media screen and (min-width: 768px) {
-                flex-direction: column;
-            }
+            flex-direction: column;
 
             @media screen and (min-width: 1200px) {
                 flex-direction: row;
@@ -226,23 +178,14 @@
 
         &-input {
             @extend %footer-input-position;
-            @include size (358px, 50px);
+            @include size (290px, 50px);
             @include BBB(rgba(33, 150, 243, 0.00), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
             border: 1px solid rgba(255, 255, 255, 0.30);
             @extend %fifth-transition;
-
-            @media screen and (min-width: 320px) {
-                width: 290px;
-            }
+            margin-bottom: 20px;
 
             @media screen and (min-width: 480px) {
                 width: 450px;
-                margin-bottom: 20px;
-            }
-
-            @media screen and (min-width: 768px) {
-                width: 450px;
-                margin-bottom: 20px;
             }
 
             @media screen and (min-width: 1200px) {
@@ -273,11 +216,8 @@
             letter-spacing: 0.96px;
             @include BBB($second-color, 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 4px);
             @extend %first-transition;
-
-            @media screen and (min-width: 320px) {
-                margin-left: auto;
-                margin-right: auto;
-            }
+            margin-left: auto;
+            margin-right: auto;
 
             @media screen and (min-width: 768px) {
                 margin-left: 125px;
@@ -303,26 +243,16 @@
 
         &-icon {
             position: relative;
-            right: 0;
-            top: 0;
+            left: 58px;
+            top: -35px;
             @include size (24px, 24px);
 
-            @media screen and (min-width: 320px) {
-                left: 58px;
-                top: -56px;
-            }
-
-            @media screen and (min-width: 768px) {
-                left: 58px;
-                top: -56px;
-            }
-
             @media screen and (min-width: 1200px) {
-                left: -70px;
+                left: -50px;
                 top: 14px;
             }
 
-            &:hover .subscribe-button {
+            .subscribe-icon:hover .subscribe-button {
                 fill: $main-color;
             }
 

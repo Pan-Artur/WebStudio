@@ -1,12 +1,8 @@
 .projects {
-    padding-bottom: 94px;
-    width: 1200px;
+    padding-bottom: 60px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -18,38 +14,27 @@
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding-bottom: 94px;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         gap: 30px;
-
-        @media screen and (min-width: 320px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media screen and (min-width: 768px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media screen and (min-width: 320px) {
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
 
     &__item {
         padding-bottom: 20px;
-        @include size (370px, 404px);
+        @include size (100%, 370px);
         border: 1px solid $ninth-color;
         overflow: hidden;
 
         @media screen and (min-width: 480px) {
             width: 450px;
+            height: 404px;
         }
 
         @media screen and (min-width: 768px) {
@@ -98,20 +83,16 @@
     }
 
     &__text {
-        padding: 63px 24px;
-        width: 370px;
+        width: 290px;
+        height: 294px;
+        padding: 20px 10px;
         @include text-color-styles($fifth-color, 400, 18px, 1.55);
         letter-spacing: 0.54px;
         background: rgba(33, 150, 243, 0.90);
 
-        @media screen and (min-width: 320px) {
-            width: 290px;
-            height: 294px;
-            padding: 77px 22px;
-        }
-
         @media screen and (min-width: 480px) {
             width: 450px;
+            padding: 77px 30px;
         }
 
         @media screen and (min-width: 768px) {
@@ -121,6 +102,7 @@
 
         @media screen and (min-width: 1200px) {
             width: 370px;
+            padding: 63px 24px;
         }
     }
 
@@ -136,7 +118,12 @@
     }
 
     &__photo {
-        height: 294px;
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: 480px) {
+            height: 294px;
+        }
     }
 }
 

@@ -1,0 +1,65 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #FFFFFF;
+
+    &__button {
+        @include size (40px, 40px);
+        background-color: #FFFFFF;
+    }
+
+    &__button-icon {
+        @include size (18px, 18px);
+        @extend %fourth-transition;
+    
+        &:hover {
+            fill: $second-color;
+        }
+    
+        &:focus {
+            fill: $second-color;
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.17;
+        color: $main-color;
+    }
+
+    &__phone {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.17;
+        color: $second-color;
+    }
+
+    &__post {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.17;
+        color: $sixth-color;
+    }
+
+    &__contacts {
+        display: flex;
+    }
+
+    &__contacts-link {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        color: $second-color;
+    }
+}
+

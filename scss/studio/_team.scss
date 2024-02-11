@@ -1,80 +1,65 @@
 .team {
     @extend %team-position;
     background: $eighth-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         @include text-color-styles($main-color, 700, 28px, 1.17);
 
         @media screen and (min-width: 1200px) {
             font-size: 36px;
+            margin-bottom: 50px;
         }
     }
 
     &__list {
         display: flex;
-        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
-        flex-direction: column;
+        width: 290px;
         gap: 30px;
 
-        @media screen and (min-width: 1200px) {
-            flex-direction: row;
+        @media screen and (min-width: 480px) {
+            width: 450px;
         }
-    }
-    
-    &__box1 {
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
 
         @media screen and (min-width: 768px) {
-            flex-direction: row;
-            margin-right: auto;
-            margin-left: auto;
+            width: 738px;
         }
 
         @media screen and (min-width: 1200px) {
-            margin: 0;
-        }
-    }
-
-    &__box2 {
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin: 0;
+            width: 1170px;
         }
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
         padding-bottom: 9px;
-        @include size(290px, 480px);
+        @include size(290px, auto);
         @include BBB($fifth-color, $main-box-shadow, 0px 0px 4px 4px);
+
+        @media screen and (min-width: 480px) {
+            @include size(450px, 622px);
+            margin: 0;
+        }
 
         @media screen and (min-width: 768px) {
             @include size(354px, 536px);
-            margin: 0;
+            flex-basis: calc((100% - 30px) / 2);
         }
 
         @media screen and (min-width: 1200px) {
             @include size(270px, 428px);
-            
+            flex-basis: calc((100% - 90px) / 4);
         }
 
         &-icons {
@@ -104,10 +89,10 @@
     
     &__photo {
         @extend %team-photo-position;
-        @include size(290px, 310px);
+        @include size(100%, auto);
 
         @media screen and (min-width: 480px) {
-            @include size(450px, 320px);
+            @include size(450px, 460px);
         }
 
         @media screen and (min-width: 768px) {

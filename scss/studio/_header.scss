@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     @extend %header-position;
     background: rgba(255, 255, 255, 0.933);
     height: 60px;
@@ -80,10 +80,10 @@
     }
 
     &__menu {
+        display: block;
         content: '';
         @include size(40px, 40px);
         margin-left: auto;
-        display: block;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -91,9 +91,9 @@
     }
 
     &__menu-icon {
+        display: block;
         @include size(100%, 100%);
         fill: black;
-        display: block;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -131,17 +131,9 @@
         @include text-color-styles();
     }
 
-    .kontakt-link {
-        color: $main-color;
-    }
-
-    .kontakt-link:hover {
-        color: $second-color;
-    }
-
     .bottom-line::after {
         @extend %bottom-line;
-        @include size (48px, 4px);
+        @include size (100%, 4px);
         border-radius: 2px;
         background-color: $second-color;
         @extend %seventh-transition;
@@ -163,11 +155,11 @@
     }
 
     .bottom-line2:hover::after {
-        @include opacity-width(1, 70px);
+        @include opacity-width(1, 100%);
     }
 
     .bottom-line2:focus::after {
-        @include opacity-width(1, 70px);
+        @include opacity-width(1, 100%);
         @extend %seventh-transition;
     }
 
@@ -177,11 +169,11 @@
     }
 
     .bottom-line3:hover::after {
-        @include opacity-width(1, 66px);
+        @include opacity-width(1, 100%);
     }
 
     .bottom-line3:focus::after {
-        @include opacity-width(1, 66px);
+        @include opacity-width(1, 100%);
         @extend %seventh-transition;
     }
 
@@ -217,11 +209,27 @@
     
         &:hover {
             @include text-color-styles();
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
     
         &:focus {
             @include text-color-styles();
             @extend %second-transition;
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
 
         &:hover &-icon {
@@ -232,16 +240,16 @@
             fill: $second-color;
             @extend %second-transition;
         }
-    }
 
-    &__post-icon {
-        margin-right: 8px;
-        @include size (16px, 12px);
-        fill: $sixth-color;
-        @extend %fourth-transition;
-    
-        &:hover {
-            fill: $second-color;
+        &-icon {
+            margin-right: 8px;
+            @include size (16px, 12px);
+            fill: $sixth-color;
+            @extend %fourth-transition;
+
+            &:hover {
+                fill: $second-color;
+            }
         }
     }
 
@@ -261,11 +269,29 @@
     
         &:hover {
             @include text-color-styles();
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                justify-content: center;
+                font-size: 14px;
+            }
         }
     
         &:focus {
             @include text-color-styles();
             @extend %second-transition;
+
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                justify-content: center;
+                font-size: 14px;
+            }
         }
 
         &:hover &-icon {
@@ -298,11 +324,9 @@
 
     &__line {
         @extend %header-line-styles;
-        display: none;
 
         @media screen and (min-width:768px) {
             margin-top: 14px;
-            display: block;
         }
 
         @media screen and (min-width:1200px) {
