@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/portfolio.min.css">
+    <link rel="stylesheet" href="./css/menu.min.css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 <body class="body">
@@ -18,7 +19,7 @@
         <div class="container">
             <nav class="header__navigation">
                 <a href="./index.html" class="header__logo">Web<span class="header__logo2">Studio</span></a>
-                <a class="header__menu" href="#">
+                <a data-menu-open class="header__menu" href="#">
                     <svg class="header__menu-icon">
                         <use href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
@@ -283,6 +284,57 @@
             </form>
         </div>
     </footer>
+    <!-- Menu -->
+    <div data-menu class="menu is-hidden">
+        <div class="container menu__container">
+            <button data-menu-close type="button" class="menu__button">
+                <svg class="menu__button-icon">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu__list1">
+                <li class="menu__item">
+                    <a class="menu__link menu__link1" href="./index.html">Студія</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link2" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link3" href="./kontakt.html">Контакти</a>
+                </li>
+            </ul>
+            <ul class="menu__list2">
+                <li class="menu__list2-item">
+                    <a class="menu__phone" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="menu__list2-item">
+                    <a class="menu__post" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu__contacts">
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link menu__contacts-link1" href="">Instagram</a>
+                    <div class="menu__contacts-line"></div>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="">Twitter</a>
+                    <div class="menu__contacts-line"></div>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="">Facebook</a>
+                    <div class="menu__contacts-line"></div>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="./js/mobile-menu.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- <script>
         AOS.init();

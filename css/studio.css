@@ -278,6 +278,9 @@ button {
   height: 40px;
   margin-left: auto;
 }
+.header__menu:hover {
+  fill: #2196F3;
+}
 @media screen and (min-width: 768px) {
   .header__menu {
     display: none;

@@ -1,3 +1,12 @@
+.menu.is-hidden {
+    transition-duration: 1000ms;
+    transform: translateX(100%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -5,15 +14,28 @@
     left: 0;
     bottom: 0;
     z-index: 5;
-    background-color: #FFFFFF;
+    background-color: $fifth-color;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    display: block;
+
+    transition-duration: 1000ms;
+    transform: translateY(0);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
     &__button {
         @include size (40px, 40px);
         background-color: #FFFFFF;
+        display: flex;
+        margin-left: auto;
     }
 
     &__button-icon {
-        @include size (18px, 18px);
+        @include size (40px, 40px);
         @extend %fourth-transition;
     
         &:hover {
@@ -25,9 +47,19 @@
         }
     }
 
-    &_list {
+    &__list1 {
         display: flex;
         flex-direction: column;
+        gap: 32px;
+        overflow: auto;
+        height: 60vh;
+    }
+
+    &__list2 {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: auto;
     }
 
     &__link {
@@ -35,6 +67,10 @@
         font-weight: 500;
         line-height: 1.17;
         color: $main-color;
+    }
+
+    &__link:hover {
+        color: $second-color;
     }
 
     &__phone {
@@ -53,13 +89,32 @@
 
     &__contacts {
         display: flex;
-    }
+        margin-top: 64px;
 
-    &__contacts-link {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.22;
-        color: $second-color;
+        &-item {
+            display: flex;
+        }
+
+        &-link {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.22;
+            color: $second-color;
+            margin-left: 10px;
+        }
+
+        &-link1 {
+            margin-left: 0;
+        }
+
+        &-line {
+            display: block;
+            content: ' ';
+            width: 1px;
+            height: 22px;
+            background-color: gray;
+            margin-left: 10px;
+        }
     }
 }
 

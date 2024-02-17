@@ -20,7 +20,7 @@
         <div class="container header__container">
             <nav class="header__navigation">
                 <a href="./index.html" class="header__logo">Web<span class="header__logo2">Studio</span></a>
-                <a class="header__menu" href="#">
+                <a data-menu-open class="header__menu" href="#">
                     <svg class="header__menu-icon">
                         <use href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
@@ -479,22 +479,22 @@
         </div>
     </div>
     <!-- Menu -->
-    <div class="menu">
+    <div data-menu class="menu is-hidden">
         <div class="container menu__container">
-            <button type="button" class="menu__button">
+            <button data-menu-close type="button" class="menu__button">
                 <svg class="menu__button-icon">
                     <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-            <ul class="menu__list"> 
+            <ul class="menu__list1"> 
                 <li class="menu__item">
-                    <a class="menu__link menu__link1" href="">Студія</a>
+                    <a class="menu__link menu__link1" href="./index.html">Студія</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link2" href="">Портфоліо</a>
+                    <a class="menu__link menu__link2" href="./portfolio.html">Портфоліо</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__link3" href="">Контакти</a>
+                    <a class="menu__link menu__link3" href="./kontakt.html">Контакти</a>
                 </li>
             </ul>
             <ul class="menu__list2">
@@ -511,7 +511,7 @@
             </ul>
             <ul class="menu__contacts">
                 <li class="menu__contacts-item">
-                    <a class="menu__contacts-link" href="">Instagram</a>
+                    <a class="menu__contacts-link menu__contacts-link1" href="">Instagram</a>
                     <div class="menu__contacts-line"></div>
                 </li>
                 <li class="menu__contacts-item">
@@ -528,7 +528,8 @@
             </ul>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- <script>
         AOS.init();
